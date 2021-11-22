@@ -1,0 +1,27 @@
+*{
+    font-family: "Roboto", "Claibri", sans-serif;
+}
+
+h1{
+    font-family: "Shrikhand";
+}
+
+h1, h2{
+    font-size: nth($font-scale-size, 3);
+}
+
+h2{
+    font-weight: bold;
+}
+
+h3,p{
+    font-size: nth($font-scale-size, 2);
+}
+
+p{
+    font-weight: light;
+}
+
+li{
+    font-size: nth($font-scale-size, 1);
+}
