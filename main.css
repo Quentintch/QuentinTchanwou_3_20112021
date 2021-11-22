@@ -8,7 +8,7 @@ h1 {
 }
 
 h1, h2 {
-  font-size: 4rem;
+  font-size: 1.5rem;
 }
 
 h2 {
@@ -25,5 +25,9 @@ p {
 
 li {
   font-size: 2rem;
+}
+
+img {
+  width: 150px;
 }
 /*# sourceMappingURL=main.css.map */
