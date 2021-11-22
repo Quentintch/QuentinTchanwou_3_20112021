@@ -1,0 +1,29 @@
+/*Texte*/
+* {
+  font-family: "Roboto", "Claibri", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand";
+}
+
+h1, h2 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3, p {
+  font-size: 3rem;
+}
+
+p {
+  font-weight: light;
+}
+
+li {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=main.css.map */
