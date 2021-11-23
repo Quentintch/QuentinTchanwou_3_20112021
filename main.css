@@ -14,27 +14,24 @@ body * {
 
 h1 {
   font-family: "Shrikhand";
-  font-size: 25px;
+  font-size: 23px;
 }
 
 h2 {
-  font-size: 19px;
+  font-size: 20px;
   font-weight: bold;
 }
 
-h3, p, a {
+h3, p {
   font-size: 14px;
 }
 
 p {
-  font-weight: light;
-}
-
-li a {
-  font-size: 13px;
+  font-weight: lighter;
 }
 
 a {
+  font-size: 12.5px;
   text-decoration: none;
   color: #000;
 }
@@ -45,23 +42,68 @@ img {
 
 .section-one {
   background-color: #eaeaeaff;
-  color: #5e5e5eff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.section-one p {
+.localisation {
+  color: #353535ff;
+  width: 123.91px;
+  margin: 10px auto;
+}
+
+.localisation i {
+  float: left;
+  margin-right: 9px;
+  font-size: 12.5px;
+}
+
+.localisation p {
   font-weight: bold;
+  font-size: 12.5px;
 }
 
 .functionning-step p {
   font-weight: bold;
+  font-size: 12.5px;
+}
+
+.btn {
+  color: #FFF;
+  padding: 12px 18px;
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header h1 {
+  padding-top: 15px;
+  padding-bottom: 3px;
 }
 
 .section-two {
   background-color: #f6f6f6ff;
 }
 
-.presentation__btn {
-  font-weight: bold;
+.presentation {
+  width: 80%;
+  padding: 28px 20px 53px 20px;
+  text-align: center;
+}
+
+.presentation h2 {
+  margin-bottom: 10px;
+}
+
+.presentation p {
+  margin-bottom: 32px;
 }
 
 .section-four {

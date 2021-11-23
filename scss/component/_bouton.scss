@@ -1,0 +1,6 @@
+.btn{
+    color: map-get($color-scale, light);
+    padding: 12px 18px;
+    border-radius: 20px;
+    background: linear-gradient(map-get($bkg-color-scale,secondary),map-get($bkg-color-scale,primary));
+}

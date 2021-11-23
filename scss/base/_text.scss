@@ -12,19 +12,16 @@ h2{
     font-weight: bold;
 }
 
-h3, p, a{
+h3, p{
     font-size: nth($font-scale-size, 2);
 }
 
 p{
-    font-weight: light;
-}
-
-li a{
-    font-size: nth($font-scale-size, 1);
+    font-weight: lighter;
 }
 
 a{
+    font-size: nth($font-scale-size, 1);
     text-decoration: none;
     color: map-get($color-scale, dark);
 }

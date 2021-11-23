@@ -1,5 +1,6 @@
 .functionning-step{
     & p{
         font-weight: bold;
+        font-size: nth($font-scale-size, 1);
     }
 }
