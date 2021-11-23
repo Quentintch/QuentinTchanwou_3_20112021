@@ -1,5 +1,5 @@
 .section-one{
-    
+    background-color: map-get($bkg-color-scale, mixed);
     color: map-get($color-scale,mixed);
 
     & p{

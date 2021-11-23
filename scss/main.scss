@@ -1,9 +1,12 @@
 @import "utils/variables";
 
+@import "base/body";
 @import "base/text";
 
 @import "component/images";
 @import "component/localisation";
 @import "component/functionning";
 
+@import "layout/presentation";
+@import "layout/restaurants";
 @import "layout/footer";

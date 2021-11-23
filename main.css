@@ -1,5 +1,13 @@
 /*Texte*/
 /*background*/
+body {
+  margin: auto;
+}
+
+body * {
+  margin: auto;
+}
+
 * {
   font-family: "Roboto", "Claibri", sans-serif;
 }
@@ -37,6 +45,7 @@ img {
 }
 
 .section-one {
+  background-color: #eaeaeaff;
   color: #5e5e5eff;
 }
 
@@ -46,6 +55,14 @@ img {
 
 .functionning-step p {
   font-weight: bold;
+}
+
+.section-two {
+  background-color: #f6f6f6ff;
+}
+
+.section-four {
+  background-color: #f6f6f6ff;
 }
 
 footer {
