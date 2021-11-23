@@ -1,3 +1,14 @@
 .section-four{
     background-color: $bkg-light;
 }
+
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__cards{
+        overflow: hidden;
+        height: 100px;
+    }
+}

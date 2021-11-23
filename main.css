@@ -9,16 +9,14 @@ body {
   margin: auto;
 }
 
-body * {
-  margin: auto;
-}
-
 body .container {
   width: 85%;
+  margin: auto;
 }
 
 * {
   font-family: "Roboto", "Claibri", sans-serif;
+  margin: 0px;
 }
 
 h1 {
@@ -29,6 +27,7 @@ h1 {
 h2 {
   font-size: 20px;
   font-weight: bold;
+  margin-bottom: 15px;
 }
 
 h3, p {
@@ -73,14 +72,38 @@ img {
   font-size: 12.5px;
 }
 
+.container {
+  padding: 40px 0px 52px 0px;
+}
+
+.functionning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 215px;
+}
+
 .functionning__step {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f6f6f6ff;
   border-radius: 17px;
-  margin: 15px auto;
-  height: 64px;
+  height: 62px;
+  width: 98%;
 }
 
 .functionning__step div {
@@ -97,19 +120,21 @@ img {
   font-size: 12.5px;
   color: #FFF;
   position: relative;
-  right: 12px;
+  right: 9px;
 }
 
 .functionning__step i {
   color: #7e7e7eff;
   font-size: 14px;
-  width: 9%;
+  text-align: center;
+  width: 16%;
+  position: relative;
+  right: 4px;
 }
 
 .functionning__step p {
   font-weight: bold;
   font-size: 12.5px;
-  width: 72%;
 }
 
 .functionning__step--strong {
@@ -142,6 +167,7 @@ header {
 header h1 {
   padding-top: 15px;
   padding-bottom: 3px;
+  margin: 0px auto;
 }
 
 .section-two {
@@ -154,16 +180,30 @@ header h1 {
   text-align: center;
 }
 
-.presentation h2 {
-  margin-bottom: 10px;
-}
-
 .presentation p {
   margin-bottom: 32px;
 }
 
 .section-four {
   background-color: #f6f6f6ff;
+}
+
+.restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.restaurants__cards {
+  overflow: hidden;
+  height: 100px;
 }
 
 footer {
