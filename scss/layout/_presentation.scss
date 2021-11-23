@@ -1,3 +1,9 @@
 .section-two{
     background-color: map-get($bkg-color-scale, light);
 }
+
+.presentation{
+    &__btn{
+        font-weight: bold;
+    }
+}

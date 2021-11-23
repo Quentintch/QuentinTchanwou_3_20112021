@@ -4,6 +4,11 @@ footer{
 
     & li{
         list-style-type: none;
+
+        & a{
+            color: map-get($color-scale, light);
+        }
+
     }
 }
 

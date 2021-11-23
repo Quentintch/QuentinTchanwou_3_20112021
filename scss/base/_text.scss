@@ -20,12 +20,11 @@ p{
     font-weight: light;
 }
 
-li{
+li a{
     font-size: nth($font-scale-size, 1);
 }
 
 a{
     text-decoration: none;
     color: map-get($color-scale, dark);
-    font-weight: bold;
 }

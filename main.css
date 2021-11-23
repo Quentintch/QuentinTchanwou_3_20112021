@@ -30,14 +30,13 @@ p {
   font-weight: light;
 }
 
-li {
+li a {
   font-size: 13px;
 }
 
 a {
   text-decoration: none;
   color: #000;
-  font-weight: bold;
 }
 
 img {
@@ -61,6 +60,10 @@ img {
   background-color: #f6f6f6ff;
 }
 
+.presentation__btn {
+  font-weight: bold;
+}
+
 .section-four {
   background-color: #f6f6f6ff;
 }
@@ -72,5 +75,9 @@ footer {
 
 footer li {
   list-style-type: none;
+}
+
+footer li a {
+  color: #FFF;
 }
 /*# sourceMappingURL=main.css.map */
