@@ -1,5 +1,7 @@
 header{
     display: flex;
+    @extend %box-shadow;
+    position: relative;
 
     & h1{
         padding-top: 15px;

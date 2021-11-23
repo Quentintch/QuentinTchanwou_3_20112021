@@ -1,7 +1,47 @@
-.functionning-step{
-    display: flex;
-    & p{
-        font-weight: bold;
-        font-size: nth($font-scale-size, 1);
+.functionning{
+    
+    &__step{
+        display: flex;
+        @extend %box-shadow;
+        background-color: $bkg-light;
+        border-radius: 17px;
+        margin: 15px auto;
+        height: 64px;
+
+        & div{
+            display: flex;
+            justify-content: center;
+            background-color: $bkg-primary;
+            width: $ico-size;
+            height: $ico-size;
+            border-radius: 10px;
+            font-size: nth($font-scale-size, 1);
+            color: map-get($color-scale, light);
+            position: relative;
+            right: 12px;
+        }
+
+        & i{
+            color: map-get($color-scale, light-mixed);
+            font-size: nth($font-scale-size, 2);
+            width: 9%;
+        }
+
+        & p{
+            font-weight: bold;
+            font-size: nth($font-scale-size, 1);
+            width: 72%;
+        }
+
+        &--strong{
+            background-color: lighten($bkg-primary, 36%);
+            & i{    
+                color: $bkg-primary;
+            }
+        }
+    }
+
+    &__step:nth-child(1) i{
+        font-size: nth($font-scale-size, 1)+4px;
     }
 }

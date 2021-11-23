@@ -1,10 +1,10 @@
 .section-one{
-    background-color: map-get($bkg-color-scale, mixed);
+    background-color: $bkg-mixed;
     display: flex;
 }
 
 .localisation{
-    color: map-get($color-scale,mixed);
+    color: map-get($color-scale,dark-mixed);
     width: 123.91px;
     margin: 10px auto;
 

@@ -1,6 +1,6 @@
 /*Texte*/
 /*background*/
-.btn {
+.functionning__step, .restaurants__card, .btn, header {
   -webkit-box-shadow: 0px 3px 5px #b6b6b6;
           box-shadow: 0px 3px 5px #b6b6b6;
 }
@@ -11,6 +11,10 @@ body {
 
 body * {
   margin: auto;
+}
+
+body .container {
+  width: 85%;
 }
 
 * {
@@ -69,15 +73,55 @@ img {
   font-size: 12.5px;
 }
 
-.functionning-step {
+.functionning__step {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #f6f6f6ff;
+  border-radius: 17px;
+  margin: 15px auto;
+  height: 64px;
 }
 
-.functionning-step p {
+.functionning__step div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #9356DC;
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+  font-size: 12.5px;
+  color: #FFF;
+  position: relative;
+  right: 12px;
+}
+
+.functionning__step i {
+  color: #7e7e7eff;
+  font-size: 14px;
+  width: 9%;
+}
+
+.functionning__step p {
   font-weight: bold;
   font-size: 12.5px;
+  width: 72%;
+}
+
+.functionning__step--strong {
+  background-color: #f4eefc;
+}
+
+.functionning__step--strong i {
+  color: #9356DC;
+}
+
+.functionning__step:nth-child(1) i {
+  font-size: 16.5px;
 }
 
 .btn {
@@ -92,6 +136,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 header h1 {
