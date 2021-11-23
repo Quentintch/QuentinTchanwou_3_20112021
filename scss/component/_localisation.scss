@@ -1,0 +1,8 @@
+.section-one{
+    
+    color: map-get($color-scale,mixed);
+
+    & p{
+        font-weight: bold;
+    }
+}

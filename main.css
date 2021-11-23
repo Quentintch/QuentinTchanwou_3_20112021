@@ -1,22 +1,21 @@
 /*Texte*/
+/*background*/
 * {
   font-family: "Roboto", "Claibri", sans-serif;
 }
 
 h1 {
   font-family: "Shrikhand";
-}
-
-h1, h2 {
-  font-size: 1.5rem;
+  font-size: 25px;
 }
 
 h2 {
+  font-size: 19px;
   font-weight: bold;
 }
 
-h3, p {
-  font-size: 3rem;
+h3, p, a {
+  font-size: 14px;
 }
 
 p {
@@ -24,10 +23,37 @@ p {
 }
 
 li {
-  font-size: 2rem;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
 }
 
 img {
   width: 150px;
+}
+
+.section-one {
+  color: #5e5e5eff;
+}
+
+.section-one p {
+  font-weight: bold;
+}
+
+.functionning-step p {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #353535ff;
+  color: #FFF;
+}
+
+footer li {
+  list-style-type: none;
 }
 /*# sourceMappingURL=main.css.map */

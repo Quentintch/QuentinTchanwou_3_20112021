@@ -4,17 +4,15 @@
 
 h1{
     font-family: "Shrikhand";
-}
-
-h1, h2{
-    font-size: nth($font-scale-size, 3);
+    font-size: nth($font-scale-size, 4);
 }
 
 h2{
+    font-size: nth($font-scale-size, 3);
     font-weight: bold;
 }
 
-h3,p{
+h3, p, a{
     font-size: nth($font-scale-size, 2);
 }
 
@@ -24,4 +22,10 @@ p{
 
 li{
     font-size: nth($font-scale-size, 1);
+}
+
+a{
+    text-decoration: none;
+    color: map-get($color-scale, dark);
+    font-weight: bold;
 }
