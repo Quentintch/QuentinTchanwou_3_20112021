@@ -347,13 +347,6 @@ header h1 {
   bottom: 0px;
 }
 
-.description:active ::before {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-animation: filling 500ms forwards ease-out;
-          animation: filling 500ms forwards ease-out;
-}
-
 .description__text {
   padding-left: 10px;
   height: 36.6px;
@@ -372,6 +365,9 @@ header h1 {
 .description__like {
   padding-right: 20px;
   width: 17px;
+  height: 17px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
 }
 
 footer {
