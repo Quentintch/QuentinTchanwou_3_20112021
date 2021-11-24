@@ -1,15 +1,23 @@
-.image:nth-child(1){
-    @include positions(null, 47px, -5px);
+$width: 273px;
+$bottom: 44px; 
+$right: 0px;
+
+.image{
+    position: relative;
 }
 
-.image:nth-child(2){
-    @include positions(null, 16px, 0px);
+.restaurants__card:nth-child(1) .image{
+    @include positions(271px, 43px, 3px);
 }
 
-.image:nth-child(3){
-    @include positions(null, null, -15px);
+.restaurants__card:nth-child(2) .image{
+    @include positions($width, 124px, $right);
 }
 
-.image:nth-child(4){
-    @include positions(271px, null, -2px);
+.restaurants__card:nth-child(3) .image{
+    @include positions($width, $bottom, $right);
+}
+
+.restaurants__card:nth-child(4) .image{
+    @include positions(267px, $bottom, $right);
 }

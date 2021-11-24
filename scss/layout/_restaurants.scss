@@ -8,14 +8,25 @@
     justify-content: space-between;
     height: 1000px;
 
+    & .new{
+        position: absolute;
+        z-index: 1;
+        background-color: $bkg-tertiairy;
+        color: darken($bkg-tertiairy,36%);
+        top: 10px;
+        right: 8px;
+        padding: 5px 9px;
+        border-radius: 2px;
+        @include little-bold(11px);
+    }
+
     &__card{
-        @extend %box-shadow;
+        @include box-radius-shadow($radius:10px,$color:#e4e4e4);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         overflow: hidden;
         height: 200px;
-        border-radius: 10px;
         position: relative;
     }
 }

@@ -12,11 +12,10 @@
     &__step{
         display: flex;
         align-items: center;
-        @extend %box-shadow;
         background-color: $bkg-light;
-        border-radius: 17px;
         height: 62px;
         width: 98%;
+        @include box-radius-shadow(17px);
 
         & div{
             display: flex;
@@ -41,8 +40,7 @@
         }
 
         & p{
-            font-weight: bold;
-            font-size: nth($font-scale-size, 1);
+            @include little-bold;
         }
 
         &--strong{

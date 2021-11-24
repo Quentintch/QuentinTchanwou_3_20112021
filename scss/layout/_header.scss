@@ -1,6 +1,6 @@
 header{
     display: flex;
-    @extend %box-shadow;
+    @include box-radius-shadow(0px);
     position: relative;
 
     & h1{
