@@ -15,11 +15,12 @@
         background-color: $bkg-light;
         height: 62px;
         width: 98%;
-        @include box-radius-shadow(17px);
+        @include box-radius-shadow(17px, 2px, 7px, #d8d8d8);
 
         & div{
             display: flex;
             justify-content: center;
+            align-items: center;
             background-color: $bkg-primary;
             width: $ico-size;
             height: $ico-size;

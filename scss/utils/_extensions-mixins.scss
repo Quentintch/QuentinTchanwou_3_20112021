@@ -2,18 +2,31 @@
 
 /*Mixins*/
 
-@mixin box-radius-shadow($radius, $y: 3px, $color: #d4d4d4){
+@mixin box-radius-shadow($radius, $y: 3px, $blur: 6px, $color: #d4d4d4){
     border-radius: $radius;
-    box-shadow: 0px $y 6px $color;
+    box-shadow: 0px $y $blur $color;
 }
 
 @mixin positions($width, $bottom, $right){
     width: $width;
     bottom: $bottom;
     right: $right;
+    @media screen and (min-width: $min-tab-size) {
+        width: $width*1.06;
+        bottom: $bottom;
+        right: $right;
+    }
 }
 
 @mixin little-bold ($font-size:nth($font-scale-size, 1)) {
     font-weight: bold;
     font-size: $font-size;
+}
+
+/*media-queries*/
+
+@mixin tablet-version {
+    @media screen and (min-width: $min-tab-size) {
+        @content;
+    }
 }

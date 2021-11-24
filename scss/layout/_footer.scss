@@ -2,13 +2,35 @@ footer{
     background-color: $bkg-dark;
     color: $light;
 
+    .container{
+        padding: 18px 0px 26px 0px;
+    }
+
+    & h1{
+        font-size: nth($font-scale-size,2);
+        margin-bottom: 15px;
+    }
+
+    & ul{
+        padding: 0px;
+    }
+
     & li{
         list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & i{
+            font-size: 10px;
+            text-align: center;
+            width: 5%;
+        }
 
         & a{
             color: $light;
+            width: 93%;
         }
-
     }
 }
 
