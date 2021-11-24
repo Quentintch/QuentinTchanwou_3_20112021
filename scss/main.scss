@@ -1,5 +1,5 @@
 @import "utils/variables";
-@import "utils/extensions";
+@import "utils/extensions-mixins";
 
 @import "base/body";
 @import "base/text";
@@ -7,7 +7,6 @@
 @import "component/images";
 @import "component/localisation";
 @import "component/functionning";
-@import "component/restaurant-card";
 @import "component/bouton";
 
 @import "layout/header";

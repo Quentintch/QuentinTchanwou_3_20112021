@@ -1,3 +1,15 @@
-img{
-    width: 150px;
+.image:nth-child(1){
+    @include positions(null, 47px, -5px);
+}
+
+.image:nth-child(2){
+    @include positions(null, 16px, 0px);
+}
+
+.image:nth-child(3){
+    @include positions(null, null, -15px);
+}
+
+.image:nth-child(4){
+    @include positions(271px, null, -2px);
 }

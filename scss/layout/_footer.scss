@@ -1,12 +1,12 @@
 footer{
     background-color: $bkg-dark;
-    color: map-get($color-scale, light);
+    color: $light;
 
     & li{
         list-style-type: none;
 
         & a{
-            color: map-get($color-scale, light);
+            color: $light;
         }
 
     }

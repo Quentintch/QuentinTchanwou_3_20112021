@@ -26,13 +26,13 @@
             height: $ico-size;
             border-radius: 10px;
             font-size: nth($font-scale-size, 1);
-            color: map-get($color-scale, light);
+            color: $light;
             position: relative;
             right: 9px;
         }
 
         & i{
-            color: map-get($color-scale, light-mixed);
+            color: $light-mixed;
             font-size: nth($font-scale-size, 2);
             text-align: center;
             width: 16%;

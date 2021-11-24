@@ -6,9 +6,28 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 1000px;
 
-    &__cards{
+    &__card{
+        @extend %box-shadow;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         overflow: hidden;
-        height: 100px;
+        height: 200px;
+        border-radius: 10px;
+        position: relative;
+    }
+}
+
+.description{
+    display: flex;
+    background-color: $light;
+    height: 31%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    &__like{
+        width: 20px;
     }
 }
