@@ -1,0 +1,11 @@
+@keyframes filling{
+    0%{
+        transform: translate(-100%,-100%);
+    }
+    50%{
+        transform: translate(-30%,-30%);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}

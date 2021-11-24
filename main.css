@@ -3,6 +3,35 @@
 /*Extensions*/
 /*Mixins*/
 /*media-queries*/
+@-webkit-keyframes filling {
+  0% {
+    -webkit-transform: translate(-100%, -100%);
+            transform: translate(-100%, -100%);
+  }
+  50% {
+    -webkit-transform: translate(-30%, -30%);
+            transform: translate(-30%, -30%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@keyframes filling {
+  0% {
+    -webkit-transform: translate(-100%, -100%);
+            transform: translate(-100%, -100%);
+  }
+  50% {
+    -webkit-transform: translate(-30%, -30%);
+            transform: translate(-30%, -30%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
 body {
   margin: auto;
   min-width: 216px;
@@ -316,6 +345,13 @@ header h1 {
   width: 100%;
   position: absolute;
   bottom: 0px;
+}
+
+.description:active ::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-animation: filling 500ms forwards ease-out;
+          animation: filling 500ms forwards ease-out;
 }
 
 .description__text {

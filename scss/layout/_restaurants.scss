@@ -41,6 +41,14 @@
     position: absolute;
     bottom: 0px;
 
+    &:active{
+        ::before{
+            background: linear-gradient($bkg-secondary,$bkg-primary);
+            animation: filling 500ms forwards ease-out;
+        }
+        
+    }
+
     &__text{
         padding-left: 10px;
         height: 36.6px;
@@ -52,5 +60,7 @@
     &__like{
         padding-right: 20px;
         width: 17px;
+
+        
     }
 }
