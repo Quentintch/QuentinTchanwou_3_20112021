@@ -1,8 +1,35 @@
-path{
-    fill:none;
-    stroke:#000000;
-    stroke-width:17.4;
-    stroke-miterlimit:4;
-    stroke-dasharray:none;
-    stroke-opacity:1;
+.description__like{
+
+    .stop1{
+        stop-color:#9356dc;
+        stop-opacity:1
+    }
+
+    .stop2{
+        stop-color:#ff79da;
+        stop-opacity:1;
+    }
+    
+    path{
+        mix-blend-mode:multiply;
+        fill:url(#linearGradient2372);
+        fill-opacity:0;
+        stroke:#000000;
+        stroke-width:17.4;
+        stroke-miterlimit:4;
+        stroke-dasharray:none;
+        stroke-opacity:1;
+        transition: all 1s;
+    }
+
+    :active{
+        fill-opacity:1;
+        stroke-opacity:0;
+
+        /*defs > linearGradient{
+            animation: filling 1s ease-out forwards;
+        }*/
+    }
 }
+
+

@@ -15,10 +15,34 @@
    height="417.89017"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs8" />
+     id="defs8">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2370">
+      <stop
+         style="stop-color:#9356dc;stop-opacity:1"
+         offset="0"
+         id="stop2927" />
+      <stop
+         style="stop-color:#ff79da;stop-opacity:1"
+         offset="1"
+         id="stop2925" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2370"
+       id="linearGradient2372"
+       x1="272.49643"
+       y1="21.985653"
+       x2="145.68068"
+       y2="351.91409"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="pad" />
+  </defs>
   <sodipodi:namedview
      id="namedview6"
      pagecolor="#ffffff"
@@ -29,12 +53,12 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="0.81835936"
-     inkscape:cx="112.42005"
+     inkscape:cx="-128.91647"
      inkscape:cy="457.01194"
      inkscape:window-width="1492"
      inkscape:window-height="1030"
-     inkscape:window-x="643"
-     inkscape:window-y="250"
+     inkscape:window-x="410"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4"
      fit-margin-top="0"
@@ -46,5 +70,5 @@
      d="M 371.2195,214.91282 209.53846,406.99406 c -2.34604,2.92814 -12.12119,2.92814 -14.46723,0 L 37.300231,214.91282 C 1.6209185,169.52683 -5.6126956,93.612882 44.436094,41.028561 82.461444,1.1328018 133.4488,-1.7483088 168.09181,29.89232 L 202.30485,65.465973 236.51789,29.89232 C 267.9779,1.8873059 326.26784,1.1189007 364.08364,40.906557 414.04873,93.476974 406.60557,169.89283 371.2195,214.91282 Z"
      id="path2"
      sodipodi:nodetypes="ccccccccsc"
-     style="fill:none;stroke:#000000;stroke-width:17.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="mix-blend-mode:multiply;fill:url(#linearGradient2372);fill-opacity:1;stroke:#000000;stroke-width:17.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
