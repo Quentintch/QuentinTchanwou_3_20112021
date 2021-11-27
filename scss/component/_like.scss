@@ -24,8 +24,11 @@
 
 @for $i from 1 through 4{
     .description__like--#{$i}{
-        :active{
-            animation: filling 500ms ease-in forwards; 
+        &:active{
+            path{
+                animation: filling 500ms ease-in forwards; 
+            }
+            
         }
     }
 }
