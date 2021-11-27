@@ -10,4 +10,4 @@ Un dossier contenant les images
 Un fichier CSS compilé
 Un fichier MAP
 
-Voici le lien URL de la page d'accueil: https://quentintch.github.io/QuentinTchanwou_3_20112021/
+Voici le lien URL de la page d'accueil: https://quentintch.github.io/QuentinTchanwou_3_20112021/accueil.html
