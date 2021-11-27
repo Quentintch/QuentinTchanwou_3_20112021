@@ -2,7 +2,7 @@
 
     .stop1{
         stop-color:#9356dc;
-        stop-opacity:1
+        stop-opacity:1;
     }
 
     .stop2{
@@ -18,18 +18,14 @@
         stroke-width:17.4;
         stroke-miterlimit:4;
         stroke-dasharray:none;
-        stroke-opacity:1;
-        transition: all 1s;
-    }
-
-    :active{
-        fill-opacity:1;
-        stroke-opacity:0;
-
-        /*defs > linearGradient{
-            animation: filling 1s ease-out forwards;
-        }*/
+        stroke-opacity:1; 
     }
 }
 
-
+@for $i from 1 through 4{
+    .description__like--#{$i}{
+        :active{
+            animation: filling 500ms ease-in forwards; 
+        }
+    }
+}
