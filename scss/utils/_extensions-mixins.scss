@@ -23,6 +23,13 @@
     font-size: $font-size;
 }
 
+@mixin display-flex ($direction: "row", $justify: "initial", $align: "initial") {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
 /*media-queries*/
 
 @mixin tablet-version {

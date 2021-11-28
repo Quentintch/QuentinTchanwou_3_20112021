@@ -9,3 +9,35 @@
         fill-opacity: 1;
     }
 }
+
+@keyframes opacity-width-change{
+    0%{
+        opacity: 0;
+        width: 0%;
+    }
+    60%,100%{
+        opacity: 1;
+        width: 40%;
+    }
+}
+
+@keyframes opacity-change{
+    0%{
+        opacity: 0;
+    }
+    60%,100%{
+        opacity: 1;
+    }
+}
+
+@keyframes loading{
+    0%{
+        transform: scaleX(0);
+    }
+    50%{
+        transform: scaleX(0.9);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}

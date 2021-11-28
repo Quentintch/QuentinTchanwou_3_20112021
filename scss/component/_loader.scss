@@ -1,0 +1,38 @@
+.loading-page{
+    //display: none;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #FFF;
+    z-index: 2;
+    @include display-flex(column, center, center)
+
+    h1{
+        animation: opacity-change 1500ms ease-in-out 2 alternate;
+    }
+}
+
+.loader{
+    animation: opacity-width-change 1500ms ease-in-out 2 alternate;
+    border-radius: 20px ;
+    margin: 5px auto;
+    padding: 2px;
+    border: 3px solid $dark-mixed;
+    height: 30px;
+    width: 40%;
+    opacity: 0;
+    @include display-flex(column);
+
+    &__bar{
+        @include display-flex();
+        border-radius: 20px ;
+        height: 100%;
+        width: 100%;
+        transform-origin: left center;
+        animation: loading 1000ms 1000ms backwards ease-in;
+        
+        background: linear-gradient($bkg-secondary,$bkg-primary);
+    }
+}

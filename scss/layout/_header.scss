@@ -1,5 +1,5 @@
 header{
-    display: flex;
+    @include display-flex($direction:column);
     @include box-radius-shadow(0px);
     position: relative;
 
