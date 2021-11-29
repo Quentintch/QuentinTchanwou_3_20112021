@@ -1,6 +1,5 @@
 header{
     @include display-flex($direction:column);
-    @include box-radius-shadow(0px);
     background-color: #FFF;
     position: relative;
     z-index: 1;

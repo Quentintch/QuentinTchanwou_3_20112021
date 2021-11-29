@@ -164,10 +164,15 @@ a {
   position: relative;
 }
 
+.image--menu {
+  position: absolute;
+  z-index: -1;
+}
+
 .a-la-française {
-  width: 273px;
-  bottom: 44px;
-  right: 0px;
+  width: 330px;
+  bottom: none;
+  right: -14px;
 }
 
 .restaurants__card:nth-child(1) .image {
@@ -240,6 +245,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: 0px 3px 6px #d4d4d4 inset;
+          box-shadow: 0px 3px 6px #d4d4d4 inset;
 }
 
 .localisation {
@@ -390,9 +397,6 @@ header {
   -webkit-box-align: "initial";
       -ms-flex-align: "initial";
           align-items: "initial";
-  border-radius: 0px;
-  -webkit-box-shadow: 0px 3px 6px #d4d4d4;
-          box-shadow: 0px 3px 6px #d4d4d4;
   background-color: #FFF;
   position: relative;
   z-index: 1;
@@ -636,5 +640,161 @@ footer li i {
 footer li a {
   color: #FFF;
   width: 93%;
+}
+
+.main-section {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.restaurant-menu {
+  padding: 25px 13px 65px 13px;
+  margin-top: 176px;
+  border-radius: 30px 30px 0px 0px;
+  background-color: #f6f6f6ff;
+}
+
+.restaurant-menu__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.restaurant-menu__header h1 {
+  padding-left: 6px;
+}
+
+.restaurant-menu__part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  height: 270px;
+  margin-bottom: 32px;
+}
+
+.restaurant-menu__part h2 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 13px;
+  width: 33px;
+  height: 19px;
+  margin: 0px 0px 0px 6px;
+  border-bottom: 2.4px solid #99E2D0;
+}
+
+.restaurant-menu__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 106px;
+  margin: auto;
+}
+
+.meal {
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 5px 7px #e5e5e5;
+          box-shadow: 0px 5px 7px #e5e5e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFF;
+  overflow: hidden;
+  height: 53px;
+}
+
+.meal__selected {
+  background-color: #99E2D0;
+  height: initial;
+  padding: 19px 16px;
+}
+
+.meal__selected i {
+  color: #FFF;
+}
+
+.meal-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: 12px;
+  padding-right: 17px;
+  height: 60%;
+  width: 100%;
+}
+
+.meal-description__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  font-size: 11px;
+  float: left;
+  height: 100%;
+}
+
+.meal-description__text p {
+  font-size: 11px;
+}
+
+.meal-description__price {
+  font-weight: bold;
+  font-size: 12.5px;
+  color: #353535ff;
+  font-size: 11.7px;
 }
 /*# sourceMappingURL=main.css.map */
