@@ -10,6 +10,15 @@
     }
 }
 
+@keyframes disparition{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
 @keyframes opacity-width-change{
     0%{
         opacity: 0;

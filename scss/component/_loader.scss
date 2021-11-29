@@ -1,5 +1,4 @@
 .loading-page{
-    //display: none;
     position: fixed;
     top: 0px;
     bottom: 0px;
@@ -7,10 +6,12 @@
     right: 0px;
     background-color: #FFF;
     z-index: 2;
-    @include display-flex(column, center, center)
+    transform: scale(0);
+    animation: disparition 3000ms;
+    @include display-flex(column, center, center);
 
     h1{
-        animation: opacity-change 1500ms ease-in-out 2 alternate;
+        animation: opacity-change 1500ms forwards ease-in-out 2 alternate;
     }
 }
 
@@ -33,6 +34,6 @@
         transform-origin: left center;
         animation: loading 1000ms 1000ms backwards ease-in;
         
-        background: linear-gradient($bkg-secondary,$bkg-primary);
+        background: linear-gradient(-45deg, $bkg-secondary,$bkg-primary);
     }
 }

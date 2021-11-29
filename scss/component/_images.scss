@@ -6,6 +6,10 @@ $right: 0px;
     position: relative;
 }
 
+.a-la-française{
+    @include positions($width, $bottom, $right);
+}
+
 .restaurants__card:nth-child(1) .image{
     @include positions(271px, 43px, 3px);
 }
