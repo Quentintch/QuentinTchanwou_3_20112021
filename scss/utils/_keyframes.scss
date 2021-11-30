@@ -51,4 +51,13 @@
     }
 }
 
-
+@keyframes rotation{
+    from{
+        opacity: 0;
+        transform: perspective(500px) translateZ(-300px) rotate3d(-3,-1,0,90deg);
+    }
+    to{
+        opacity: 1;
+        transform: perspective(500px) translateZ(0px) rotate3d(3,1,0,0deg);
+    }
+}

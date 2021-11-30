@@ -119,6 +119,32 @@
   }
 }
 
+@-webkit-keyframes rotation {
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(500px) translateZ(-300px) rotate3d(-3, -1, 0, 90deg);
+            transform: perspective(500px) translateZ(-300px) rotate3d(-3, -1, 0, 90deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: perspective(500px) translateZ(0px) rotate3d(3, 1, 0, 0deg);
+            transform: perspective(500px) translateZ(0px) rotate3d(3, 1, 0, 0deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(500px) translateZ(-300px) rotate3d(-3, -1, 0, 90deg);
+            transform: perspective(500px) translateZ(-300px) rotate3d(-3, -1, 0, 90deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: perspective(500px) translateZ(0px) rotate3d(3, 1, 0, 0deg);
+            transform: perspective(500px) translateZ(0px) rotate3d(3, 1, 0, 0deg);
+  }
+}
+
 body {
   margin: auto;
   min-width: 216px;
@@ -705,6 +731,51 @@ footer li a {
   border-bottom: 2.4px solid #99E2D0;
 }
 
+.restaurant-menu__part--starter article:nth-child(2) {
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+
+.restaurant-menu__part--starter article:nth-child(3) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.restaurant-menu__part--starter article:nth-child(4) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.restaurant-menu__part--course article:nth-child(2) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.restaurant-menu__part--course article:nth-child(3) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.restaurant-menu__part--course article:nth-child(4) {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.restaurant-menu__part--dessert article:nth-child(2) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.restaurant-menu__part--dessert article:nth-child(3) {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+
+.restaurant-menu__part--dessert article:nth-child(4) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
 .restaurant-menu__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -739,6 +810,8 @@ footer li a {
   width: 278px;
   cursor: pointer;
   position: relative;
+  -webkit-animation: rotation 200ms cubic-bezier(0, 0, 0.65, 1) backwards;
+          animation: rotation 200ms cubic-bezier(0, 0, 0.65, 1) backwards;
 }
 
 .meal__selected {
