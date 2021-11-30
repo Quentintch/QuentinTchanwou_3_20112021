@@ -51,6 +51,7 @@
     background-color: #FFF;
     overflow: hidden;
     height: 53px;
+    width: 278px;
     cursor: pointer;
     position: relative;
 
@@ -64,8 +65,29 @@
 
         i{
             color: #FFF;
+            transition: transform 300ms;
         }
     }
+
+    &:hover{
+
+        .meal-description{
+            width: 73%;
+
+            &__text{
+                width: 87%;
+            }
+        }
+
+        .meal__selected{
+            transform: scalex(1) translateX(0px);
+            transition: transform 300ms;
+
+            > i{
+                transform: rotate(1turn);
+            }
+        }
+    } 
 
 }
 
@@ -83,10 +105,14 @@
         @include display-flex(column, space-between, none);
         font-size: 11px;
         float: left;
-        height: 100%;
+        width: 100%;
 
         p{
             font-size: 11px;
+            font-weight: normal;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
     }
 
@@ -95,15 +121,5 @@
         color: $dark-mixed;
         font-size: 11.7px;
     }
-
-    &:active{
-        width: 73%;
-
-        + .meal__selected{
-            transform: scalex(1) translateX(0px);
-            transition: transform 300ms;
-        }
-    }
-        
 
 }

@@ -736,6 +736,7 @@ footer li a {
   background-color: #FFF;
   overflow: hidden;
   height: 53px;
+  width: 278px;
   cursor: pointer;
   position: relative;
 }
@@ -753,6 +754,32 @@ footer li a {
 
 .meal__selected i {
   color: #FFF;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.meal:hover .meal-description {
+  width: 73%;
+}
+
+.meal:hover .meal-description__text {
+  width: 87%;
+}
+
+.meal:hover .meal__selected {
+  -webkit-transform: scalex(1) translateX(0px);
+          transform: scalex(1) translateX(0px);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.meal:hover .meal__selected > i {
+  -webkit-transform: rotate(1turn);
+          transform: rotate(1turn);
 }
 
 .meal-description {
@@ -795,11 +822,15 @@ footer li a {
           align-items: none;
   font-size: 11px;
   float: left;
-  height: 100%;
+  width: 100%;
 }
 
 .meal-description__text p {
   font-size: 11px;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .meal-description__price {
@@ -807,18 +838,5 @@ footer li a {
   font-size: 12.5px;
   color: #353535ff;
   font-size: 11.7px;
-}
-
-.meal-description:active {
-  width: 73%;
-}
-
-.meal-description:active + .meal__selected {
-  -webkit-transform: scalex(1) translateX(0px);
-          transform: scalex(1) translateX(0px);
-  -webkit-transition: -webkit-transform 300ms;
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms;
-  transition: transform 300ms, -webkit-transform 300ms;
 }
 /*# sourceMappingURL=main.css.map */
