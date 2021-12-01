@@ -32,5 +32,21 @@ footer{
             width: 93%;
         }
     }
-}
 
+    .footer-nav{
+
+        @include large-tel-version{
+            display: flex;
+
+            &__one{
+                width: 50%;
+
+                @include large-tablet-version {
+                    width: 23%;
+                }
+                
+            }
+        }
+        
+    }
+}

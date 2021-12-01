@@ -1,5 +1,25 @@
 /*Extensions*/
 
+/*media queries*/
+
+@mixin large-tel-version {
+    @media screen and (min-width: $min-large-tel-size) {
+        @content;
+    }
+}
+
+@mixin little-tablet-version {
+    @media screen and (min-width: $min-tab-size) {
+        @content;
+    }
+}
+
+@mixin large-tablet-version {
+    @media screen and (min-width: $min-large-tab-size) {
+        @content;
+    }
+}
+
 /*Mixins*/
 
 @mixin box-radius-shadow($radius, $y: 3px, $blur: 6px, $color: #d4d4d4){
@@ -14,6 +34,11 @@
 
     @media screen and (min-width: $min-large-tel-size) {
         bottom: $bottom*1.7;
+    }
+
+    @media screen and (min-width: $min-tab-size) {
+        bottom: $bottom*1.17;
+        width: $width*1.3;
     }
     
 }

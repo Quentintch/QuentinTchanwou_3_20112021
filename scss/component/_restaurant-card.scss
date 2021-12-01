@@ -7,6 +7,14 @@
     overflow: hidden;
     height: 200px;
     position: relative;
+
+    @include little-tablet-version {
+        width: 48%;
+    }
+
+    @include large-tablet-version {
+        width: 31%;
+    }
         
 }
 

@@ -2,6 +2,7 @@
 /*Texte*/
 /*background*/
 /*Extensions*/
+/*media queries*/
 /*Mixins*/
 @-webkit-keyframes filling {
   50% {
@@ -206,6 +207,13 @@ a {
   }
 }
 
+@media screen and (min-width: 500px) {
+  .a-la-française {
+    bottom: 1035.45px;
+    width: 429px;
+  }
+}
+
 .restaurants__card:nth-child(1) .image {
   width: 103%;
   bottom: 43px;
@@ -215,6 +223,13 @@ a {
 @media screen and (min-width: 380px) {
   .restaurants__card:nth-child(1) .image {
     bottom: 73.1px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .restaurants__card:nth-child(1) .image {
+    bottom: 50.31px;
+    width: 133.9%;
   }
 }
 
@@ -230,6 +245,13 @@ a {
   }
 }
 
+@media screen and (min-width: 500px) {
+  .restaurants__card:nth-child(2) .image {
+    bottom: 142.74px;
+    width: 132.6%;
+  }
+}
+
 .restaurants__card:nth-child(3) .image {
   width: 104%;
   bottom: 44px;
@@ -242,6 +264,13 @@ a {
   }
 }
 
+@media screen and (min-width: 500px) {
+  .restaurants__card:nth-child(3) .image {
+    bottom: 51.48px;
+    width: 135.2%;
+  }
+}
+
 .restaurants__card:nth-child(4) .image {
   width: 101%;
   bottom: 44px;
@@ -251,6 +280,13 @@ a {
 @media screen and (min-width: 380px) {
   .restaurants__card:nth-child(4) .image {
     bottom: 74.8px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .restaurants__card:nth-child(4) .image {
+    bottom: 51.48px;
+    width: 131.3%;
   }
 }
 
@@ -321,6 +357,95 @@ a {
   font-size: 12.5px;
 }
 
+.functionning__step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6ff;
+  height: 62px;
+  width: 98%;
+  border-radius: 17px;
+  -webkit-box-shadow: 0px 2px 7px #d8d8d8;
+          box-shadow: 0px 2px 7px #d8d8d8;
+}
+
+.functionning__step div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #9356DC;
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+  font-size: 12.5px;
+  color: #FFF;
+  position: relative;
+  right: 9px;
+}
+
+.functionning__step i {
+  color: #7e7e7eff;
+  font-size: 14px;
+  text-align: center;
+  width: 16%;
+  position: relative;
+  right: 4px;
+}
+
+.functionning__step p {
+  font-weight: bold;
+  font-size: 12.5px;
+}
+
+.functionning__step--strong {
+  background-color: #f4eefc;
+}
+
+.functionning__step--strong i {
+  color: #9356DC;
+}
+
+.functionning__step:nth-child(1) i {
+  font-size: 16.5px;
+}
+
+@media screen and (min-width: 500px) {
+  .functionning__step {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 10px;
+    height: 138px;
+    width: 31%;
+    position: relative;
+  }
+  .functionning__step div {
+    position: absolute;
+    top: -9px;
+  }
+  .functionning__step p {
+    text-align: center;
+    width: 90%;
+  }
+  .functionning__step i {
+    right: 0px;
+    margin-bottom: 10px;
+  }
+}
+
 .restaurants__card {
   border-radius: 10px;
   -webkit-box-shadow: 0px 3px 6px #e4e4e4;
@@ -338,6 +463,18 @@ a {
   overflow: hidden;
   height: 200px;
   position: relative;
+}
+
+@media screen and (min-width: 500px) {
+  .restaurants__card {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .restaurants__card {
+    width: 31%;
+  }
 }
 
 .new {
@@ -560,6 +697,7 @@ header a {
 }
 
 .functionning {
+  height: 215px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -567,74 +705,31 @@ header a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 215px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-.functionning__step {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #f6f6f6ff;
-  height: 62px;
-  width: 98%;
-  border-radius: 17px;
-  -webkit-box-shadow: 0px 2px 7px #d8d8d8;
-          box-shadow: 0px 2px 7px #d8d8d8;
-}
-
-.functionning__step div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #9356DC;
-  width: 18px;
-  height: 18px;
-  border-radius: 10px;
-  font-size: 12.5px;
-  color: #FFF;
-  position: relative;
-  right: 9px;
-}
-
-.functionning__step i {
-  color: #7e7e7eff;
-  font-size: 14px;
-  text-align: center;
-  width: 16%;
-  position: relative;
-  right: 4px;
-}
-
-.functionning__step p {
-  font-weight: bold;
-  font-size: 12.5px;
-}
-
-.functionning__step--strong {
-  background-color: #f4eefc;
-}
-
-.functionning__step--strong i {
-  color: #9356DC;
-}
-
-.functionning__step:nth-child(1) i {
-  font-size: 16.5px;
+@media screen and (min-width: 500px) {
+  .functionning {
+    height: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .section-four {
@@ -653,6 +748,18 @@ header a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 850px;
+}
+
+@media screen and (min-width: 500px) {
+  .restaurants {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 455px;
+  }
 }
 
 footer {
@@ -695,6 +802,23 @@ footer li i {
 footer li a {
   color: #FFF;
   width: 93%;
+}
+
+@media screen and (min-width: 380px) {
+  footer .footer-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .footer-nav__one {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 380px) and (min-width: 768px) {
+  footer .footer-nav__one {
+    width: 23%;
+  }
 }
 
 .main-section {

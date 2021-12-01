@@ -7,6 +7,12 @@
     flex-direction: column;
     justify-content: space-between;
     height: 850px;
+
+    @include little-tablet-version {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 455px;
+    }
 }
 
 

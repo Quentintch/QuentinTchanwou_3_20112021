@@ -3,56 +3,13 @@
 }
 
 .functionning{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
     height: 215px;
+    @include display-flex(column, space-between, flex-end);
     
-    &__step{
-        display: flex;
-        align-items: center;
-        background-color: $bkg-light;
-        height: 62px;
-        width: 98%;
-        @include box-radius-shadow(17px, 2px, 7px, #d8d8d8);
-
-        & div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: $bkg-primary;
-            width: $ico-size;
-            height: $ico-size;
-            border-radius: 10px;
-            font-size: nth($font-scale-size, 1);
-            color: $light;
-            position: relative;
-            right: 9px;
-        }
-
-        & i{
-            color: $light-mixed;
-            font-size: nth($font-scale-size, 2);
-            text-align: center;
-            width: 16%;
-            position: relative;
-            right: 4px;
-        }
-
-        & p{
-            @include little-bold;
-        }
-
-        &--strong{
-            background-color: lighten($bkg-primary, 36%);
-            & i{    
-                color: $bkg-primary;
-            }
-        }
+    @include little-tablet-version {
+        height: initial;
+        @include display-flex(row, space-between, center);
     }
-
-    &__step:nth-child(1) i{
-        font-size: nth($font-scale-size, 1)+4px;
-    }
+    
+    
 }
