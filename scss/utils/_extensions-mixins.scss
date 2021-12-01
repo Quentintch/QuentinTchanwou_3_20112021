@@ -11,6 +11,11 @@
     width: $width;
     bottom: $bottom;
     right: $right;
+
+    @media screen and (min-width: $min-large-tel-size) {
+        bottom: $bottom*1.7;
+    }
+    
 }
 
 @mixin little-bold ($font-size:nth($font-scale-size, 1)) {
@@ -23,21 +28,4 @@
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
-}
-
-/*media-queries*/
-
-@mixin tablet-version {
-    @media screen and (min-width: $min-tab-size) {
-        @content;
-    }
-}
-
-
-@media screen and (min-width: $min-tab-size) {
-    @mixin positions($width, $bottom, $right){
-        width: $width*1.06;
-        bottom: $bottom;
-        right: $right;
-    }
 }

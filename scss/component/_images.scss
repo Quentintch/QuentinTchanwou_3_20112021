@@ -1,6 +1,4 @@
-$width: 273px;
-$bottom: 44px; 
-$right: 0px;
+
 
 .image{
     position: relative;
@@ -12,21 +10,21 @@ $right: 0px;
 }
 
 .a-la-française{
-    @include positions(330px, none, -14px);
+    @include positions(330px, 885px, -14px);
 }
 
 .restaurants__card:nth-child(1) .image{
-    @include positions(271px, 43px, 3px);
+    @include positions(103%, 43px, 4px);
 }
 
 .restaurants__card:nth-child(2) .image{
-    @include positions($width, 124px, $right);
+    @include positions(102%, 122px, 0px);
 }
 
 .restaurants__card:nth-child(3) .image{
-    @include positions($width, $bottom, $right);
+    @include positions(104%, 44px, 5px);
 }
 
 .restaurants__card:nth-child(4) .image{
-    @include positions(267px, $bottom, $right);
+    @include positions(101%, 44px, 1px);
 }
