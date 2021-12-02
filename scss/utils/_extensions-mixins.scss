@@ -59,6 +59,15 @@
     width: $width;
     bottom: $bottom;
     right: $right;
+
+    @media screen and (min-width: $min-tab-size) {
+        bottom: $bottom*0.89;
+    }
+
+    @media screen and (min-width: $min-large-tab-size) {
+        position: fixed;
+        top: 0px;
+    }
 }
 
 @mixin little-bold ($font-size:nth($font-scale-size, 1)) {

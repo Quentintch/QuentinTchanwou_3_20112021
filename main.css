@@ -201,6 +201,19 @@ a {
   right: -15px;
 }
 
+@media screen and (min-width: 500px) {
+  .a-la-française {
+    bottom: 787.65px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .a-la-française {
+    position: fixed;
+    top: 0px;
+  }
+}
+
 .restaurants__card:nth-child(1) .image {
   width: 103%;
   bottom: 43px;
@@ -887,14 +900,25 @@ footer li a {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 20px;
-  /*@include large-tel-version{
-            width: 358px;
-            margin: 0px auto 20px auto;
-        }*/
 }
 
 .restaurant-menu__header h1 {
   padding-left: 6px;
+}
+
+@media screen and (min-width: 380px) {
+  .restaurant-menu__header {
+    width: 358px;
+    margin: 0px auto 20px 0px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .restaurant-menu__header {
+    width: 320px;
+    margin-left: auto;
+  }
 }
 
 .restaurant-menu__part {
@@ -932,6 +956,13 @@ footer li a {
     margin: 0px auto 11px auto;
     border-bottom-style: dotted;
     padding-left: 2%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-menu__part h2 {
+    width: 93%;
+    padding-left: 4%;
   }
 }
 
@@ -980,6 +1011,12 @@ footer li a {
           animation-delay: 800ms;
 }
 
+@media screen and (min-width: 768px) {
+  .restaurant-menu__part {
+    width: 100%;
+  }
+}
+
 .restaurant-menu__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -989,6 +1026,20 @@ footer li a {
           justify-content: center;
   width: 106px;
   margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-menu {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .restaurant-menu {
+    width: 468.04px;
+    float: right;
+    margin-right: 5%;
+  }
 }
 
 .meal {
@@ -1063,6 +1114,13 @@ footer li a {
   .meal {
     width: 358px;
     margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .meal {
+    margin-right: 45px;
+    width: 335px;
   }
 }
 
