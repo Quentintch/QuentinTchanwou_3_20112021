@@ -9,8 +9,20 @@
     }
 }
 
+.la-palette-du-gout{
+    @include positions-menu(110%, 0px, -15px);
+}
+
+.la-note-enchantee{
+    @include positions-menu(100%,-77px, 0px);
+}
+
 .a-la-française{
-    @include positions-menu(110%, 885px, -15px);
+    @include positions-menu(110%, 0px, -15px);
+}
+
+.le-delice-des-sens{
+    @include positions-menu(110%, 0px, -15px);
 }
 
 .restaurants__card:nth-child(1) .image{

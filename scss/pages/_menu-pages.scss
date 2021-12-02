@@ -35,8 +35,8 @@
     &__part{
 
         @include display-flex(column, space-between, none);
-        height: 217px;
-        margin-bottom: 32px;
+        //height: 229px;
+        margin-bottom: 23px;
 
         h2{
             display: inline-block;
@@ -100,12 +100,12 @@
 
     @include large-tablet-version{
         width: 45%;
+        float: right;
+        margin-right: 5%;
     }
 
     @include desktop-version{
-        width: 468.04px;
-        float: right;
-        margin-right: 5%;
+        width: 445.67px;
     }
 }
 
@@ -116,10 +116,11 @@
     @include display-flex(row, space-between, center);
     background-color: #FFF;
     overflow: hidden;
-    height: 53px;
+    height: 55px;
     width: 100%;
     cursor: pointer;
     position: relative;
+    margin-bottom: 12px;
     animation: rotation 200ms cubic-bezier(0, 0, 0.65, 1) backwards;
 
     &__selected{
@@ -142,7 +143,7 @@
             width: 73%;
 
             &__text{
-                width: 87%;
+                width: 79%;
             }
         }
 
@@ -159,6 +160,7 @@
     @include large-tel-version{
         width: 358px;
         margin: auto;
+        margin-bottom: 12px;
     } 
 
     @include large-tablet-version{
@@ -182,14 +184,18 @@
         @include display-flex(column, space-between, none);
         font-size: 11px;
         float: left;
-        width: 100%;
+        width: 81%;
+        height: 100%;
+
+        *{
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
 
         p{
             font-size: 11px;
             font-weight: normal;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
         }
     }
 

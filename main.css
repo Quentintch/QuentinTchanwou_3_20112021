@@ -173,7 +173,7 @@ h2 {
 }
 
 h3, p {
-  font-size: 14px;
+  font-size: 13.7px;
 }
 
 p {
@@ -195,15 +195,87 @@ a {
   z-index: -1;
 }
 
+.la-palette-du-gout {
+  width: 110%;
+  top: 0px;
+  right: -15px;
+}
+
+@media screen and (min-width: 380px) {
+  .la-palette-du-gout {
+    top: -80px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .la-palette-du-gout {
+    top: -168px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .la-palette-du-gout {
+    position: fixed;
+    top: 0px;
+    width: 151.8%;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .la-palette-du-gout {
+    top: -40px;
+    width: 121%;
+  }
+}
+
+.la-note-enchantee {
+  width: 100%;
+  top: -77px;
+  right: 0px;
+}
+
+@media screen and (min-width: 380px) {
+  .la-note-enchantee {
+    top: -157px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .la-note-enchantee {
+    top: -245px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .la-note-enchantee {
+    position: fixed;
+    top: 0px;
+    width: 138%;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .la-note-enchantee {
+    top: -117px;
+    width: 110%;
+  }
+}
+
 .a-la-française {
   width: 110%;
-  bottom: 885px;
+  top: 0px;
   right: -15px;
+}
+
+@media screen and (min-width: 380px) {
+  .a-la-française {
+    top: -80px;
+  }
 }
 
 @media screen and (min-width: 500px) {
   .a-la-française {
-    bottom: 787.65px;
+    top: -168px;
   }
 }
 
@@ -211,6 +283,47 @@ a {
   .a-la-française {
     position: fixed;
     top: 0px;
+    width: 151.8%;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .a-la-française {
+    top: -40px;
+    width: 121%;
+  }
+}
+
+.le-delice-des-sens {
+  width: 110%;
+  top: 0px;
+  right: -15px;
+}
+
+@media screen and (min-width: 380px) {
+  .le-delice-des-sens {
+    top: -80px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .le-delice-des-sens {
+    top: -168px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .le-delice-des-sens {
+    position: fixed;
+    top: 0px;
+    width: 151.8%;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .le-delice-des-sens {
+    top: -40px;
+    width: 121%;
   }
 }
 
@@ -426,7 +539,7 @@ a {
 
 .functionning__step i {
   color: #7e7e7eff;
-  font-size: 14px;
+  font-size: 13.7px;
   text-align: center;
   width: 16%;
   position: relative;
@@ -817,7 +930,7 @@ footer .container {
 }
 
 footer h1 {
-  font-size: 14px;
+  font-size: 13.7px;
   margin-bottom: 15px;
 }
 
@@ -935,8 +1048,7 @@ footer li a {
   -webkit-box-align: none;
       -ms-flex-align: none;
           align-items: none;
-  height: 217px;
-  margin-bottom: 32px;
+  margin-bottom: 23px;
 }
 
 .restaurant-menu__part h2 {
@@ -1031,14 +1143,14 @@ footer li a {
 @media screen and (min-width: 768px) {
   .restaurant-menu {
     width: 45%;
+    float: right;
+    margin-right: 5%;
   }
 }
 
 @media screen and (min-width: 991px) {
   .restaurant-menu {
-    width: 468.04px;
-    float: right;
-    margin-right: 5%;
+    width: 445.67px;
   }
 }
 
@@ -1061,10 +1173,11 @@ footer li a {
           align-items: center;
   background-color: #FFF;
   overflow: hidden;
-  height: 53px;
+  height: 55px;
   width: 100%;
   cursor: pointer;
   position: relative;
+  margin-bottom: 12px;
   -webkit-animation: rotation 200ms cubic-bezier(0, 0, 0.65, 1) backwards;
           animation: rotation 200ms cubic-bezier(0, 0, 0.65, 1) backwards;
 }
@@ -1093,7 +1206,7 @@ footer li a {
 }
 
 .meal:hover .meal-description__text {
-  width: 87%;
+  width: 79%;
 }
 
 .meal:hover .meal__selected {
@@ -1114,6 +1227,7 @@ footer li a {
   .meal {
     width: 358px;
     margin: auto;
+    margin-bottom: 12px;
   }
 }
 
@@ -1164,15 +1278,19 @@ footer li a {
           align-items: none;
   font-size: 11px;
   float: left;
-  width: 100%;
+  width: 81%;
+  height: 100%;
+}
+
+.meal-description__text * {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .meal-description__text p {
   font-size: 11px;
   font-weight: normal;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .meal-description__price {

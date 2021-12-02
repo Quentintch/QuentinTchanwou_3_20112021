@@ -55,18 +55,28 @@
     
 }
 
-@mixin positions-menu($width, $bottom, $right){
+@mixin positions-menu($width, $top, $right){
     width: $width;
-    bottom: $bottom;
+    top: $top;
     right: $right;
 
+    @media screen and (min-width: $min-large-tel-size) {
+        top: $top - 80px;
+    }
+
     @media screen and (min-width: $min-tab-size) {
-        bottom: $bottom*0.89;
+        top: $top - 168px;
     }
 
     @media screen and (min-width: $min-large-tab-size) {
         position: fixed;
         top: 0px;
+        width: $width*1.38;
+    }
+
+    @media screen and (min-width: $min-desktop-size) {
+        top: $top - 40px;
+        width: $width*1.1;
     }
 }
 
