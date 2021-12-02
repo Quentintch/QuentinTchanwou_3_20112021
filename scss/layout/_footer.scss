@@ -9,6 +9,10 @@ footer{
     & h1{
         font-size: nth($font-scale-size,2);
         margin-bottom: 15px;
+
+        @include desktop-version{
+            font-size: nth($font-scale-size, 3);
+        }
     }
 
     & ul{

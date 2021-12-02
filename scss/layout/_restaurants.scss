@@ -13,6 +13,10 @@
         flex-wrap: wrap;
         height: 455px;
     }
+
+    @include desktop-version{
+        height: 307px;
+    }
 }
 
 
