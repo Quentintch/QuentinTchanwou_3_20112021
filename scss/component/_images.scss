@@ -25,6 +25,7 @@
     @include positions-menu(110%, 0px, -15px);
 }
 
+
 .restaurants__card:nth-child(1) .image{
     @include positions(103%, 43px, 4px);
 }

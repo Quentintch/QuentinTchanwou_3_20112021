@@ -24,9 +24,10 @@
 
 @for $i from 1 through 4{
     .description__like--#{$i}{
-        &:active{
+        &:hover{
             path{
                 animation: filling 500ms ease-in forwards; 
+                cursor: pointer;
             }
             
         }

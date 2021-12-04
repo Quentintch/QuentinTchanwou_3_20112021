@@ -1,0 +1,53 @@
+.restaurant-menu__part{
+
+    &--starter{
+        @for $i from 2 through 4{
+            article:nth-child(#{$i}){
+                animation-delay: ($i - 2)*$meal-delay;
+            }
+        }
+    }
+
+    &--course{
+        @for $i from 2 through 4{
+            article:nth-child(#{$i}){
+                animation-delay: $meal-delay*3 + ($i - 2)*$meal-delay;
+            }
+        }
+    }
+
+    &--dessert{
+        @for $i from 2 through 4{
+            article:nth-child(#{$i}){
+                animation-delay: $meal-delay*6 + ($i - 2)*$meal-delay;
+            }
+        }
+    }
+}
+
+.restaurant-menu__part, .ten-meals{
+
+    &--starter{
+        @for $i from 2 through 5{
+            article:nth-child(#{$i}){
+                animation-delay: ($i - 2)*$meal-delay;
+            }
+        }
+    }
+
+    &--course{
+        @for $i from 2 through 4{
+            article:nth-child(#{$i}){
+                animation-delay: $meal-delay*4 + ($i - 2)*$meal-delay;
+            }
+        }
+    }
+
+    &--dessert{
+        @for $i from 2 through 4{
+            article:nth-child(#{$i}){
+                animation-delay: $meal-delay*7 + ($i - 2)*$meal-delay;
+            }
+        }
+    }
+}

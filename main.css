@@ -49,25 +49,51 @@
   }
 }
 
-@-webkit-keyframes opacity-width-change {
+@-webkit-keyframes opacity-rotation-change {
   0% {
     opacity: 0;
-    width: 0%;
   }
-  60%, 100% {
+  40%, 70% {
     opacity: 1;
-    width: 40%;
+  }
+  100% {
+    opacity: 0;
+  }
+  0% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  50% {
+    -webkit-transform: rotate(-2turn);
+            transform: rotate(-2turn);
+  }
+  100% {
+    -webkit-transform: rotate(-4turn);
+            transform: rotate(-4turn);
   }
 }
 
-@keyframes opacity-width-change {
+@keyframes opacity-rotation-change {
   0% {
     opacity: 0;
-    width: 0%;
   }
-  60%, 100% {
+  40%, 70% {
     opacity: 1;
-    width: 40%;
+  }
+  100% {
+    opacity: 0;
+  }
+  0% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  50% {
+    -webkit-transform: rotate(-2turn);
+            transform: rotate(-2turn);
+  }
+  100% {
+    -webkit-transform: rotate(-4turn);
+            transform: rotate(-4turn);
   }
 }
 
@@ -456,24 +482,28 @@ a {
   stroke-opacity: 1;
 }
 
-.description__like--1:active path {
+.description__like--1:hover path {
   -webkit-animation: filling 500ms ease-in forwards;
           animation: filling 500ms ease-in forwards;
+  cursor: pointer;
 }
 
-.description__like--2:active path {
+.description__like--2:hover path {
   -webkit-animation: filling 500ms ease-in forwards;
           animation: filling 500ms ease-in forwards;
+  cursor: pointer;
 }
 
-.description__like--3:active path {
+.description__like--3:hover path {
   -webkit-animation: filling 500ms ease-in forwards;
           animation: filling 500ms ease-in forwards;
+  cursor: pointer;
 }
 
-.description__like--4:active path {
+.description__like--4:hover path {
   -webkit-animation: filling 500ms ease-in forwards;
           animation: filling 500ms ease-in forwards;
+  cursor: pointer;
 }
 
 .section-one {
@@ -748,16 +778,16 @@ a {
           animation: opacity-change 1500ms forwards ease-in-out 2 alternate;
 }
 
-.loader {
-  -webkit-animation: opacity-width-change 1500ms ease-in-out 2 alternate;
-          animation: opacity-width-change 1500ms ease-in-out 2 alternate;
-  border-radius: 20px;
+.loader-spinner {
+  -webkit-animation: opacity-rotation-change 3000ms;
+          animation: opacity-rotation-change 3000ms;
+  border-radius: 100px;
   margin: 5px auto;
   padding: 2px;
-  border: 3px solid #353535ff;
-  height: 30px;
-  width: 40%;
+  height: 120px;
+  width: 120px;
   opacity: 0;
+  background: conic-gradient(from 0deg, #9356DC 25%, #FF79DA, #FFF 50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -765,36 +795,19 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: "initial";
-      -ms-flex-pack: "initial";
-          justify-content: "initial";
-  -webkit-box-align: "initial";
-      -ms-flex-align: "initial";
-          align-items: "initial";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.loader__bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: "row";
-          flex-direction: "row";
-  -webkit-box-pack: "initial";
-      -ms-flex-pack: "initial";
-          justify-content: "initial";
-  -webkit-box-align: "initial";
-      -ms-flex-align: "initial";
-          align-items: "initial";
-  border-radius: 20px;
-  height: 100%;
-  width: 100%;
-  -webkit-transform-origin: left center;
-          transform-origin: left center;
-  -webkit-animation: loading 1000ms 1000ms backwards ease-in;
-          animation: loading 1000ms 1000ms backwards ease-in;
-  background: linear-gradient(-45deg, #FF79DA, #9356DC);
+.loader-spinner__center {
+  border-radius: 50px;
+  background-color: #FFF;
+  height: 100px;
+  width: 100px;
 }
 
 header {
@@ -1206,7 +1219,7 @@ footer li a {
 }
 
 .meal:hover .meal-description__text {
-  width: 79%;
+  width: 85%;
 }
 
 .meal:hover .meal__selected {
@@ -1298,5 +1311,100 @@ footer li a {
   font-size: 12.5px;
   color: #353535ff;
   font-size: 11.7px;
+}
+
+.restaurant-menu__part--starter article:nth-child(2) {
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+
+.restaurant-menu__part--starter article:nth-child(3) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.restaurant-menu__part--starter article:nth-child(4) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.restaurant-menu__part--course article:nth-child(2) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.restaurant-menu__part--course article:nth-child(3) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.restaurant-menu__part--course article:nth-child(4) {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.restaurant-menu__part--dessert article:nth-child(2) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.restaurant-menu__part--dessert article:nth-child(3) {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+
+.restaurant-menu__part--dessert article:nth-child(4) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.restaurant-menu__part--starter article:nth-child(2), .ten-meals--starter article:nth-child(2) {
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+
+.restaurant-menu__part--starter article:nth-child(3), .ten-meals--starter article:nth-child(3) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.restaurant-menu__part--starter article:nth-child(4), .ten-meals--starter article:nth-child(4) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.restaurant-menu__part--starter article:nth-child(5), .ten-meals--starter article:nth-child(5) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.restaurant-menu__part--course article:nth-child(2), .ten-meals--course article:nth-child(2) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.restaurant-menu__part--course article:nth-child(3), .ten-meals--course article:nth-child(3) {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.restaurant-menu__part--course article:nth-child(4), .ten-meals--course article:nth-child(4) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.restaurant-menu__part--dessert article:nth-child(2), .ten-meals--dessert article:nth-child(2) {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+
+.restaurant-menu__part--dessert article:nth-child(3), .ten-meals--dessert article:nth-child(3) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.restaurant-menu__part--dessert article:nth-child(4), .ten-meals--dessert article:nth-child(4) {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
 }
 /*# sourceMappingURL=main.css.map */

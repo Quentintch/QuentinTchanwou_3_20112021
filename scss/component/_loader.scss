@@ -15,25 +15,21 @@
     }
 }
 
-.loader{
-    animation: opacity-width-change 1500ms ease-in-out 2 alternate;
-    border-radius: 20px ;
+.loader-spinner{
+    animation: opacity-rotation-change 3000ms;
+    border-radius: 100px ;
     margin: 5px auto;
     padding: 2px;
-    border: 3px solid $dark-mixed;
-    height: 30px;
-    width: 40%;
+    height: 120px;
+    width: 120px;
     opacity: 0;
-    @include display-flex(column);
+    background: conic-gradient(from 0deg, $bkg-primary 25%, $bkg-secondary, #FFF 50%);
+    @include display-flex(column, center, center);
 
-    &__bar{
-        @include display-flex();
-        border-radius: 20px ;
-        height: 100%;
-        width: 100%;
-        transform-origin: left center;
-        animation: loading 1000ms 1000ms backwards ease-in;
-        
-        background: linear-gradient(-45deg, $bkg-secondary,$bkg-primary);
+    &__center{
+        border-radius: 50px ;
+        background-color: #FFF;
+        height: 100px;
+        width: 100px;
     }
 }

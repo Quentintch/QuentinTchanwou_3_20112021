@@ -19,14 +19,28 @@
     }
 }
 
-@keyframes opacity-width-change{
+@keyframes opacity-rotation-change{
     0%{
         opacity: 0;
-        width: 0%;
     }
-    60%,100%{
+
+    40%,70%{
         opacity: 1;
-        width: 40%;
+    }
+
+    100%{
+        opacity: 0;
+    }
+
+    0%{
+        transform: rotate(0turn);
+    }
+    
+    50%{
+        transform: rotate(-2turn);
+    }
+    100%{
+        transform: rotate(-4turn);
     }
 }
 
