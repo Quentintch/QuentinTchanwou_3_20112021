@@ -706,8 +706,8 @@ a {
 }
 
 .description__like:hover path {
-  -webkit-animation: filling 500ms ease-in forwards;
-          animation: filling 500ms ease-in forwards;
+  -webkit-animation: filling 650ms ease-in-out forwards;
+          animation: filling 650ms ease-in-out forwards;
   cursor: pointer;
 }
 

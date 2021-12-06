@@ -27,7 +27,7 @@
     //Remplissage des coeurs au clic (mobile) ou au survol (desktop).
     &:hover{
         path{
-            animation: filling 500ms ease-in forwards; 
+            animation: filling 650ms ease-in-out forwards; 
             cursor: pointer;
         }
     }
