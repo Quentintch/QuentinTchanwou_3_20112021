@@ -17,6 +17,7 @@
 
         h2{
             @extend %title;
+            margin-bottom: 0px;
             padding-left: $titles-marge;
         }
 

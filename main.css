@@ -996,6 +996,7 @@ footer li a {
 }
 
 .restaurant-menu__header h2 {
+  margin-bottom: 0px;
   padding-left: 6px;
 }
 
