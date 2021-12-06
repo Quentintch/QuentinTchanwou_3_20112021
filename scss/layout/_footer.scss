@@ -24,6 +24,7 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 6px;
 
         & i{
             font-size: 10px;
@@ -36,8 +37,18 @@ footer{
             width: 93%;
         }
     }
-    
+
     .footer-nav{
+
+        &__one--lighter{
+            a{
+                font-weight: lighter;
+            }
+
+            li:last-child{
+                margin-bottom: 0px;
+            }
+        } 
 
         @include large-tel-version{
             display: flex;
@@ -50,6 +61,7 @@ footer{
                 }
                 
             }
+
         }
         
     }

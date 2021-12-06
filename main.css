@@ -934,6 +934,7 @@ footer li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 6px;
 }
 
 footer li i {
@@ -945,6 +946,14 @@ footer li i {
 footer li a {
   color: #FFF;
   width: 93%;
+}
+
+footer .footer-nav__one--lighter a {
+  font-weight: lighter;
+}
+
+footer .footer-nav__one--lighter li:last-child {
+  margin-bottom: 0px;
 }
 
 @media screen and (min-width: 380px) {
