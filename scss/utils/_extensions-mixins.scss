@@ -1,3 +1,11 @@
+/*Extensions*/
+
+%title{
+    font-family: "Shrikhand", serif;
+    font-weight: normal;
+    font-size: nth($font-scale-size, 4);
+}
+
 /*Media queries*/
 
 @mixin large-tel-version {

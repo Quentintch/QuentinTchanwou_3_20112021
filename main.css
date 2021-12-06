@@ -6,6 +6,13 @@
 /*Décalages et marges*/
 /*Temps de décalage entre l'apparition de chaque repas*/
 /*Largeur minimale des types de fenêtre*/
+/*Extensions*/
+h1, .restaurant-menu__header h2 {
+  font-family: "Shrikhand", serif;
+  font-weight: normal;
+  font-size: 23px;
+}
+
 /*Media queries*/
 /*Mixins*/
 @-webkit-keyframes filling {
@@ -165,12 +172,6 @@ body {
 * {
   font-family: "Roboto", "Claibri", sans-serif;
   margin: 0px;
-}
-
-h1 {
-  font-family: "Shrikhand", serif;
-  font-weight: normal;
-  font-size: 23px;
 }
 
 h2 {
@@ -994,7 +995,7 @@ footer li a {
   margin-bottom: 20px;
 }
 
-.restaurant-menu__header h1 {
+.restaurant-menu__header h2 {
   padding-left: 6px;
 }
 

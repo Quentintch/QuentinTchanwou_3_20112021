@@ -15,7 +15,8 @@
         @include display-flex(row, space-between, center);
         margin-bottom: 20px;
 
-        h1{
+        h2{
+            @extend %title;
             padding-left: $titles-marge;
         }
 
@@ -173,7 +174,7 @@
             overflow: hidden;
             white-space: nowrap;
         }
-        
+
         p{
             font-size: 11.5px;
             font-weight: normal;
