@@ -818,12 +818,12 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: "initial";
-      -ms-flex-pack: "initial";
-          justify-content: "initial";
-  -webkit-box-align: "initial";
-      -ms-flex-align: "initial";
-          align-items: "initial";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #FFF;
   position: relative;
   z-index: 1;
@@ -1058,9 +1058,9 @@ footer li a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: none;
-      -ms-flex-align: none;
-          align-items: none;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin-bottom: 23px;
 }
 
@@ -1200,22 +1200,26 @@ footer li a {
   -webkit-transform-origin: right;
           transform-origin: right;
   padding: 19px 16px;
-  -webkit-transform: scalex(0) translateX(50px);
-          transform: scalex(0) translateX(50px);
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
   position: absolute;
   right: 0px;
+  -webkit-transition: -webkit-transform 300ms ease-in;
+  transition: -webkit-transform 300ms ease-in;
+  transition: transform 300ms ease-in;
+  transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
 }
 
 .meal__selected i {
   color: #FFF;
-  -webkit-transition: -webkit-transform 300ms;
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms;
-  transition: transform 300ms, -webkit-transform 300ms;
+  -webkit-transition: -webkit-transform 300ms ease-in;
+  transition: -webkit-transform 300ms ease-in;
+  transition: transform 300ms ease-in;
+  transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
 }
 
 .meal:hover .meal-description {
-  width: 73%;
+  width: 75%;
 }
 
 .meal:hover .meal-description__text {
@@ -1223,17 +1227,13 @@ footer li a {
 }
 
 .meal:hover .meal__selected {
-  -webkit-transform: scalex(1) translateX(0px);
-          transform: scalex(1) translateX(0px);
-  -webkit-transition: -webkit-transform 300ms;
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms;
-  transition: transform 300ms, -webkit-transform 300ms;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }
 
 .meal:hover .meal__selected > i {
-  -webkit-transform: rotate(1turn);
-          transform: rotate(1turn);
+  -webkit-transform: rotate(4turn);
+          transform: rotate(4turn);
 }
 
 @media screen and (min-width: 380px) {
@@ -1271,8 +1271,8 @@ footer li a {
   width: 100%;
   -webkit-transform-origin: left;
           transform-origin: left;
-  -webkit-transition: width 300ms;
-  transition: width 300ms;
+  -webkit-transition: width 300ms ease-in;
+  transition: width 300ms ease-in;
 }
 
 .meal-description__text {
@@ -1286,9 +1286,9 @@ footer li a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: none;
-      -ms-flex-align: none;
-          align-items: none;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
   font-size: 11px;
   float: left;
   width: 81%;

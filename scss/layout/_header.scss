@@ -1,5 +1,5 @@
 header{
-    @include display-flex($direction:column);
+    @include display-flex(column, center, center);
     background-color: #FFF;
     position: relative;
     z-index: 1;

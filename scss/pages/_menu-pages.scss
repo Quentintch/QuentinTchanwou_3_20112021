@@ -34,7 +34,7 @@
 
     &__part{
 
-        @include display-flex(column, space-between, none);
+        @include display-flex(column, space-between, baseline);
         //height: 229px;
         margin-bottom: 23px;
 
@@ -127,32 +127,32 @@
         background-color: $bkg-tertiairy;
         transform-origin: right;
         padding: 19px 16px;
-        transform: scalex(0) translateX(50px);
+        transform: translateX(50px);
         position: absolute;
         right: 0px;
+        transition: transform 300ms ease-in;
 
         i{
             color: #FFF;
-            transition: transform 300ms;
+            transition: transform 300ms ease-in;
         }
     }
 
     &:hover{
 
         .meal-description{
-            width: 73%;
+            width: 75%;
 
             &__text{
                 width: 85%;
             }
         }
 
-        .meal__selected{
-            transform: scalex(1) translateX(0px);
-            transition: transform 300ms;
+        .meal__selected{  
+            transform: translateX(0px);
 
             > i{
-                transform: rotate(1turn);
+                transform: rotate(4turn);
             }
         }
     }
@@ -178,14 +178,15 @@
     height: 60%;
     width: 100%;
     transform-origin: left;
-    transition: width 300ms;
+    transition: width 300ms ease-in;
     
     &__text{
-        @include display-flex(column, space-between, none);
+        @include display-flex(column, space-between, normal);
         font-size: 11px;
         float: left;
         width: 81%;
         height: 100%;
+        
 
         *{
             text-overflow: ellipsis;
