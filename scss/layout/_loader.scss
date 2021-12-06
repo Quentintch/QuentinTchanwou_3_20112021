@@ -1,3 +1,4 @@
+//"Page" du loader
 .loading-page{
     position: fixed;
     top: 0px;
@@ -11,10 +12,11 @@
     @include display-flex(column, center, center);
 
     h1{
-        animation: opacity-change 1500ms forwards ease-in-out 2 alternate;
+        animation: opacity-change 3000ms forwards ease-in-out;
     }
 }
 
+//Loader circulaire
 .loader-spinner{
     animation: opacity-rotation-change 3000ms;
     border-radius: 100px ;
@@ -26,6 +28,7 @@
     background: conic-gradient(from 0deg, $bkg-primary 25%, $bkg-secondary, #FFF 50%);
     @include display-flex(column, center, center);
 
+    //Cercle blanc qui cache le centre du loader coloré en rotation.
     &__center{
         border-radius: 50px ;
         background-color: #FFF;

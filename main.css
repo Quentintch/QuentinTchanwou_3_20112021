@@ -1,8 +1,12 @@
 @charset "UTF-8";
-/*Texte*/
-/*background*/
-/*Extensions*/
-/*media queries*/
+/*Utils*/
+/*Taille et couleur des textes*/
+/*Couleur des fonds*/
+/*Dimension des icônes de la rubrique fonctionnement*/
+/*Décalages et marges*/
+/*Temps de décalage entre l'apparition de chaque repas*/
+/*Largeur minimale des types de fenêtre*/
+/*Media queries*/
 /*Mixins*/
 @-webkit-keyframes filling {
   50% {
@@ -101,8 +105,11 @@
   0% {
     opacity: 0;
   }
-  60%, 100% {
+  40%, 70% {
     opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -110,38 +117,11 @@
   0% {
     opacity: 0;
   }
-  60%, 100% {
+  40%, 70% {
     opacity: 1;
   }
-}
-
-@-webkit-keyframes loading {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  50% {
-    -webkit-transform: scaleX(0.9);
-            transform: scaleX(0.9);
-  }
   100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-}
-
-@keyframes loading {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  50% {
-    -webkit-transform: scaleX(0.9);
-            transform: scaleX(0.9);
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    opacity: 0;
   }
 }
 
@@ -171,6 +151,7 @@
   }
 }
 
+/*Base*/
 body {
   margin: auto;
   min-width: 300px;
@@ -199,7 +180,7 @@ h2 {
 }
 
 h3, p {
-  font-size: 13.7px;
+  font-size: 14px;
 }
 
 p {
@@ -212,6 +193,7 @@ a {
   color: #000;
 }
 
+/*Component*/
 .image {
   position: relative;
 }
@@ -219,6 +201,114 @@ a {
 .image--menu {
   position: absolute;
   z-index: -1;
+}
+
+.restaurants__card:nth-child(1) .image {
+  width: 103%;
+  bottom: 43px;
+  right: 4px;
+}
+
+@media screen and (min-width: 380px) {
+  .restaurants__card:nth-child(1) .image {
+    bottom: 73.1px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .restaurants__card:nth-child(1) .image {
+    bottom: 50.31px;
+    width: 133.9%;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .restaurants__card:nth-child(1) .image {
+    bottom: 24.51px;
+    width: 178.19%;
+    right: 67px;
+  }
+}
+
+.restaurants__card:nth-child(2) .image {
+  width: 102%;
+  bottom: 122px;
+  right: 0.1px;
+}
+
+@media screen and (min-width: 380px) {
+  .restaurants__card:nth-child(2) .image {
+    bottom: 207.4px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .restaurants__card:nth-child(2) .image {
+    bottom: 142.74px;
+    width: 132.6%;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .restaurants__card:nth-child(2) .image {
+    bottom: 69.54px;
+    width: 176.46%;
+    right: 63.1px;
+  }
+}
+
+.restaurants__card:nth-child(3) .image {
+  width: 104%;
+  bottom: 44px;
+  right: 5px;
+}
+
+@media screen and (min-width: 380px) {
+  .restaurants__card:nth-child(3) .image {
+    bottom: 74.8px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .restaurants__card:nth-child(3) .image {
+    bottom: 51.48px;
+    width: 135.2%;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .restaurants__card:nth-child(3) .image {
+    bottom: 25.08px;
+    width: 179.92%;
+    right: 68px;
+  }
+}
+
+.restaurants__card:nth-child(4) .image {
+  width: 101%;
+  bottom: 44px;
+  right: 1px;
+}
+
+@media screen and (min-width: 380px) {
+  .restaurants__card:nth-child(4) .image {
+    bottom: 74.8px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .restaurants__card:nth-child(4) .image {
+    bottom: 51.48px;
+    width: 131.3%;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .restaurants__card:nth-child(4) .image {
+    bottom: 25.08px;
+    width: 174.73%;
+    right: 64px;
+  }
 }
 
 .la-palette-du-gout {
@@ -353,159 +443,6 @@ a {
   }
 }
 
-.restaurants__card:nth-child(1) .image {
-  width: 103%;
-  bottom: 43px;
-  right: 4px;
-}
-
-@media screen and (min-width: 380px) {
-  .restaurants__card:nth-child(1) .image {
-    bottom: 73.1px;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .restaurants__card:nth-child(1) .image {
-    bottom: 50.31px;
-    width: 133.9%;
-  }
-}
-
-@media screen and (min-width: 991px) {
-  .restaurants__card:nth-child(1) .image {
-    bottom: 24.51px;
-    width: 178.19%;
-    right: 67px;
-  }
-}
-
-.restaurants__card:nth-child(2) .image {
-  width: 102%;
-  bottom: 122px;
-  right: 0.1px;
-}
-
-@media screen and (min-width: 380px) {
-  .restaurants__card:nth-child(2) .image {
-    bottom: 207.4px;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .restaurants__card:nth-child(2) .image {
-    bottom: 142.74px;
-    width: 132.6%;
-  }
-}
-
-@media screen and (min-width: 991px) {
-  .restaurants__card:nth-child(2) .image {
-    bottom: 69.54px;
-    width: 176.46%;
-    right: 63.1px;
-  }
-}
-
-.restaurants__card:nth-child(3) .image {
-  width: 104%;
-  bottom: 44px;
-  right: 5px;
-}
-
-@media screen and (min-width: 380px) {
-  .restaurants__card:nth-child(3) .image {
-    bottom: 74.8px;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .restaurants__card:nth-child(3) .image {
-    bottom: 51.48px;
-    width: 135.2%;
-  }
-}
-
-@media screen and (min-width: 991px) {
-  .restaurants__card:nth-child(3) .image {
-    bottom: 25.08px;
-    width: 179.92%;
-    right: 68px;
-  }
-}
-
-.restaurants__card:nth-child(4) .image {
-  width: 101%;
-  bottom: 44px;
-  right: 1px;
-}
-
-@media screen and (min-width: 380px) {
-  .restaurants__card:nth-child(4) .image {
-    bottom: 74.8px;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .restaurants__card:nth-child(4) .image {
-    bottom: 51.48px;
-    width: 131.3%;
-  }
-}
-
-@media screen and (min-width: 991px) {
-  .restaurants__card:nth-child(4) .image {
-    bottom: 25.08px;
-    width: 174.73%;
-    right: 64px;
-  }
-}
-
-.description__like .stop1 {
-  stop-color: #9356dc;
-  stop-opacity: 1;
-}
-
-.description__like .stop2 {
-  stop-color: #ff79da;
-  stop-opacity: 1;
-}
-
-.description__like path {
-  mix-blend-mode: multiply;
-  fill: url(#linearGradient2372);
-  fill-opacity: 0;
-  stroke: #000000;
-  stroke-width: 17.4;
-  stroke-miterlimit: 4;
-  stroke-dasharray: none;
-  stroke-opacity: 1;
-}
-
-.description__like--1:hover path {
-  -webkit-animation: filling 500ms ease-in forwards;
-          animation: filling 500ms ease-in forwards;
-  cursor: pointer;
-}
-
-.description__like--2:hover path {
-  -webkit-animation: filling 500ms ease-in forwards;
-          animation: filling 500ms ease-in forwards;
-  cursor: pointer;
-}
-
-.description__like--3:hover path {
-  -webkit-animation: filling 500ms ease-in forwards;
-          animation: filling 500ms ease-in forwards;
-  cursor: pointer;
-}
-
-.description__like--4:hover path {
-  -webkit-animation: filling 500ms ease-in forwards;
-          animation: filling 500ms ease-in forwards;
-  cursor: pointer;
-}
-
 .section-one {
   background-color: #eaeaeaff;
   display: -webkit-box;
@@ -530,6 +467,42 @@ a {
 .localisation p {
   font-weight: bold;
   font-size: 12.5px;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  color: #FFF;
+  padding: 12px 18px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  z-index: 1;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 4px 6px #d4d4d4;
+          box-shadow: 0px 4px 6px #d4d4d4;
+}
+
+.btn:hover::after {
+  opacity: 1;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff88de), to(#9b63df));
+  background: linear-gradient(#ff88de, #9b63df);
+  opacity: 0;
+  padding: 12px 18px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 5px 6px #c9c9c9;
+          box-shadow: 0px 5px 6px #c9c9c9;
+  z-index: -1;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .functionning__step {
@@ -569,7 +542,7 @@ a {
 
 .functionning__step i {
   color: #7e7e7eff;
-  font-size: 13.7px;
+  font-size: 14px;
   text-align: center;
   width: 16%;
   position: relative;
@@ -710,42 +683,34 @@ a {
   height: 17px;
 }
 
-.btn {
-  display: inline-block;
-  position: relative;
-  color: #FFF;
-  padding: 12px 18px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  z-index: 1;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 4px 6px #d4d4d4;
-          box-shadow: 0px 4px 6px #d4d4d4;
+.description__like .stop1 {
+  stop-color: #9356dc;
+  stop-opacity: 1;
 }
 
-.btn:hover::after {
-  opacity: 1;
+.description__like .stop2 {
+  stop-color: #ff79da;
+  stop-opacity: 1;
 }
 
-.btn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff88de), to(#9b63df));
-  background: linear-gradient(#ff88de, #9b63df);
-  opacity: 0;
-  padding: 12px 18px;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 5px 6px #c9c9c9;
-          box-shadow: 0px 5px 6px #c9c9c9;
-  z-index: -1;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+.description__like path {
+  mix-blend-mode: multiply;
+  fill: url(#linearGradient2372);
+  fill-opacity: 0;
+  stroke: #000000;
+  stroke-width: 17.4;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-opacity: 1;
 }
 
+.description__like:hover path {
+  -webkit-animation: filling 500ms ease-in forwards;
+          animation: filling 500ms ease-in forwards;
+  cursor: pointer;
+}
+
+/*Layout*/
 .loading-page {
   position: fixed;
   top: 0px;
@@ -774,8 +739,8 @@ a {
 }
 
 .loading-page h1 {
-  -webkit-animation: opacity-change 1500ms forwards ease-in-out 2 alternate;
-          animation: opacity-change 1500ms forwards ease-in-out 2 alternate;
+  -webkit-animation: opacity-change 3000ms forwards ease-in-out;
+          animation: opacity-change 3000ms forwards ease-in-out;
 }
 
 .loader-spinner {
@@ -943,7 +908,7 @@ footer .container {
 }
 
 footer h1 {
-  font-size: 13.7px;
+  font-size: 14px;
   margin-bottom: 15px;
 }
 
@@ -998,6 +963,7 @@ footer li a {
   }
 }
 
+/*Pages*/
 .main-section {
   position: relative;
   max-width: 100%;
@@ -1091,51 +1057,6 @@ footer li a {
   }
 }
 
-.restaurant-menu__part--starter article:nth-child(2) {
-  -webkit-animation-delay: 0ms;
-          animation-delay: 0ms;
-}
-
-.restaurant-menu__part--starter article:nth-child(3) {
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
-}
-
-.restaurant-menu__part--starter article:nth-child(4) {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-
-.restaurant-menu__part--course article:nth-child(2) {
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
-}
-
-.restaurant-menu__part--course article:nth-child(3) {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
-}
-
-.restaurant-menu__part--course article:nth-child(4) {
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
-}
-
-.restaurant-menu__part--dessert article:nth-child(2) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
-}
-
-.restaurant-menu__part--dessert article:nth-child(3) {
-  -webkit-animation-delay: 700ms;
-          animation-delay: 700ms;
-}
-
-.restaurant-menu__part--dessert article:nth-child(4) {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
-}
-
 @media screen and (min-width: 768px) {
   .restaurant-menu__part {
     width: 100%;
@@ -1204,18 +1125,18 @@ footer li a {
           transform: translateX(50px);
   position: absolute;
   right: 0px;
-  -webkit-transition: -webkit-transform 300ms ease-in;
-  transition: -webkit-transform 300ms ease-in;
-  transition: transform 300ms ease-in;
-  transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
 .meal__selected i {
   color: #FFF;
-  -webkit-transition: -webkit-transform 300ms ease-in;
-  transition: -webkit-transform 300ms ease-in;
-  transition: transform 300ms ease-in;
-  transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
 .meal:hover .meal-description {
@@ -1232,8 +1153,8 @@ footer li a {
 }
 
 .meal:hover .meal__selected > i {
-  -webkit-transform: rotate(4turn);
-          transform: rotate(4turn);
+  -webkit-transform: rotate(2turn);
+          transform: rotate(2turn);
 }
 
 @media screen and (min-width: 380px) {
@@ -1271,8 +1192,8 @@ footer li a {
   width: 100%;
   -webkit-transform-origin: left;
           transform-origin: left;
-  -webkit-transition: width 300ms ease-in;
-  transition: width 300ms ease-in;
+  -webkit-transition: width 300ms ease-in-out;
+  transition: width 300ms ease-in-out;
 }
 
 .meal-description__text {
@@ -1302,7 +1223,7 @@ footer li a {
 }
 
 .meal-description__text p {
-  font-size: 11px;
+  font-size: 11.5px;
   font-weight: normal;
 }
 

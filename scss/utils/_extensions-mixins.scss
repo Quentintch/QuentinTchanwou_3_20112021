@@ -1,6 +1,4 @@
-/*Extensions*/
-
-/*media queries*/
+/*Media queries*/
 
 @mixin large-tel-version {
     @media screen and (min-width: $min-large-tel-size) {
@@ -28,11 +26,13 @@
 
 /*Mixins*/
 
+//Cadre arrondie avec ombre
 @mixin box-radius-shadow($radius, $y: 3px, $blur: 6px, $color: #d4d4d4){
     border-radius: $radius;
     box-shadow: 0px $y $blur $color;
 }
 
+//Position et taille des images de la page d'accueil
 @mixin positions($width, $bottom, $right){
     width: $width;
     bottom: $bottom;
@@ -55,6 +55,7 @@
     
 }
 
+//Position et taille des images des pages de menu
 @mixin positions-menu($width, $top, $right){
     width: $width;
     top: $top;
@@ -80,11 +81,13 @@
     }
 }
 
+//Texte en gras
 @mixin little-bold ($font-size:nth($font-scale-size, 1)) {
     font-weight: bold;
     font-size: $font-size;
 }
 
+//Propriété de "display: flex;"
 @mixin display-flex ($direction: "row", $justify: "initial", $align: "initial") {
     display: flex;
     flex-direction: $direction;

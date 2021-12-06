@@ -10,6 +10,7 @@
     border-radius: 30px 30px 0px 0px;
     background-color: $bkg-light;
 
+    //Titre du menu
     &__header{
         @include display-flex(row, space-between, center);
         margin-bottom: 20px;
@@ -32,12 +33,13 @@
         
     }
 
+    //Les trois parties du menu
     &__part{
 
         @include display-flex(column, space-between, baseline);
-        //height: 229px;
         margin-bottom: 23px;
 
+        //Titre de chaque partie du menu
         h2{
             display: inline-block;
             text-transform: uppercase;
@@ -61,36 +63,13 @@
             }
         }
 
-        &--starter{
-            @for $i from 2 through 4{
-                article:nth-child(#{$i}){
-                    animation-delay: ($i - 2)*$meal-delay;
-                }
-            }
-        }
-
-        &--course{
-            @for $i from 2 through 4{
-                article:nth-child(#{$i}){
-                    animation-delay: $meal-delay*3 + ($i - 2)*$meal-delay;
-                }
-            }
-        }
-
-        &--dessert{
-            @for $i from 2 through 4{
-                article:nth-child(#{$i}){
-                    animation-delay: $meal-delay*6 + ($i - 2)*$meal-delay;
-                }
-            }
-        }
-
         @include large-tablet-version{
             width: 100%;
         }
 
     }
 
+    //Le bouton "Commander"
     &__btn{
         display: flex;
         justify-content: center;
@@ -123,6 +102,7 @@
     margin-bottom: 12px;
     animation: rotation 200ms cubic-bezier(0, 0, 0.65, 1) backwards;
 
+    //Carré vert de validation
     &__selected{
         background-color: $bkg-tertiairy;
         transform-origin: right;
@@ -130,11 +110,11 @@
         transform: translateX(50px);
         position: absolute;
         right: 0px;
-        transition: transform 300ms ease-in;
+        transition: transform 300ms ease-in-out;
 
         i{
             color: #FFF;
-            transition: transform 300ms ease-in;
+            transition: transform 300ms ease-in-out;
         }
     }
 
@@ -152,7 +132,7 @@
             transform: translateX(0px);
 
             > i{
-                transform: rotate(4turn);
+                transform: rotate(2turn);
             }
         }
     }
@@ -178,7 +158,7 @@
     height: 60%;
     width: 100%;
     transform-origin: left;
-    transition: width 300ms ease-in;
+    transition: width 300ms ease-in-out;
     
     &__text{
         @include display-flex(column, space-between, normal);
@@ -187,15 +167,15 @@
         width: 81%;
         height: 100%;
         
-
+        //Points de suspension lorsque le texte dépasse la "div"
         *{
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
         }
-
+        
         p{
-            font-size: 11px;
+            font-size: 11.5px;
             font-weight: normal;
         }
     }

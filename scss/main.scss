@@ -1,23 +1,28 @@
+/*Utils*/
 @import "utils/variables";
 @import "utils/extensions-mixins";
 @import "utils/keyframes";
 
+/*Base*/
 @import "base/body";
 @import "base/text";
 
+/*Component*/
 @import "component/images";
-@import "component/like";
 @import "component/localisation";
+@import "component/bouton";
 @import "component/functionning-step";
 @import "component/restaurant-card";
-@import "component/bouton";
-@import "component/loader";
+@import "component/like";
 
+/*Layout*/
+@import "layout/loader";
 @import "layout/header";
 @import "layout/presentation";
 @import "layout/functionning";
 @import "layout/restaurants";
 @import "layout/footer";
 
+/*Pages*/
 @import "pages/menu-pages";
 @import "pages/meals-animation-delay";

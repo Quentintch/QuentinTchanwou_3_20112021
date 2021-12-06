@@ -1,15 +1,18 @@
 .description__like{
 
+    //Violet du gradient de couleur des coeurs
     .stop1{
         stop-color:#9356dc;
         stop-opacity:1;
     }
 
+    //Rose du gradient de couleur des coeurs
     .stop2{
         stop-color:#ff79da;
         stop-opacity:1;
     }
     
+    //Paramètre du tracé du SVG
     path{
         mix-blend-mode:multiply;
         fill:url(#linearGradient2372);
@@ -20,16 +23,12 @@
         stroke-dasharray:none;
         stroke-opacity:1; 
     }
-}
 
-@for $i from 1 through 4{
-    .description__like--#{$i}{
-        &:hover{
-            path{
-                animation: filling 500ms ease-in forwards; 
-                cursor: pointer;
-            }
-            
+    //Remplissage des coeurs au clic (mobile) ou au survol (desktop).
+    &:hover{
+        path{
+            animation: filling 500ms ease-in forwards; 
+            cursor: pointer;
         }
     }
 }

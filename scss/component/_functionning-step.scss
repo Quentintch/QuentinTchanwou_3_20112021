@@ -6,6 +6,7 @@
     width: 98%;
     @include box-radius-shadow(17px, 2px, 7px, #d8d8d8);
 
+    //Numéro
     div{
         display: flex;
         justify-content: center;
@@ -20,6 +21,7 @@
         right: $num-gap;
     }
 
+    //Icône
     i{
         color: $light-mixed;
         font-size: nth($font-scale-size, 2);
@@ -29,10 +31,12 @@
         right: 4px;
     }
 
+    //Text descriptif
     p{
         @include little-bold;
     }
-
+    
+    //Troisième étape mise en avant
     &--strong{
         background-color: lighten($bkg-primary, 36%);
         & i{    
@@ -40,8 +44,9 @@
         }
     }
 
+    //Taille de la première icône
     &:nth-child(1) i{
-        font-size: nth($font-scale-size, 1)+4px;
+        font-size: 16.5px;
     }
 
     @include little-tablet-version{

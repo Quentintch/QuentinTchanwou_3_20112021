@@ -6,7 +6,7 @@ footer{
         padding: 18px 0px 26px 0px;
     }
 
-    & h1{
+    h1{
         font-size: nth($font-scale-size,2);
         margin-bottom: 15px;
 
@@ -15,11 +15,11 @@ footer{
         }
     }
 
-    & ul{
+    ul{
         padding: 0px;
     }
 
-    & li{
+    li{
         list-style-type: none;
         display: flex;
         justify-content: space-between;
@@ -36,7 +36,7 @@ footer{
             width: 93%;
         }
     }
-
+    
     .footer-nav{
 
         @include large-tel-version{

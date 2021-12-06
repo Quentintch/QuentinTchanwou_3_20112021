@@ -1,4 +1,5 @@
 .btn{
+    //Apparence du bouton non survolé
     display: inline-block;
     position: relative;
     color: $light;
@@ -14,6 +15,7 @@
         }
     }
 
+    //Apparence du bouton au survol
     &::after{
         content: "";
         position: absolute;
