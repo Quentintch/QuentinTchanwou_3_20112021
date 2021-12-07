@@ -378,26 +378,26 @@ a {
   }
 }
 
-.a-la-française {
+.a-la-francaise {
   width: 110%;
   top: 0px;
   right: -15px;
 }
 
 @media screen and (min-width: 380px) {
-  .a-la-française {
+  .a-la-francaise {
     top: -80px;
   }
 }
 
 @media screen and (min-width: 500px) {
-  .a-la-française {
+  .a-la-francaise {
     top: -168px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .a-la-française {
+  .a-la-francaise {
     position: fixed;
     top: 0px;
     width: 151.8%;
@@ -405,7 +405,7 @@ a {
 }
 
 @media screen and (min-width: 991px) {
-  .a-la-française {
+  .a-la-francaise {
     top: -40px;
     width: 121%;
   }
