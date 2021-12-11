@@ -9,13 +9,13 @@
     width: 123.91px;
     margin: 10px auto;
 
-    & i{
+    i{
         float: left;
         margin-right: 9px;
         font-size: nth($font-scale-size, 1);
     }
 
-    & p{
+    p{
         font-weight: bold;
         font-size: nth($font-scale-size, 1);
     }
