@@ -12,8 +12,8 @@ $bkg-dark:#353535ff;
 $bkg-primary:#9356DC;
 $bkg-secondary:#FF79DA;
 $bkg-tertiairy:#99E2D0;
-$bkg-primary-light: lighten(#9356DC,3%);
-$bkg-secondary-light: lighten(#FF79DA,3%);
+$bkg-primary-light: lighten($bkg-primary,3%);
+$bkg-secondary-light: lighten($bkg-secondary,3%);
 
 /*Dimension des icônes de la rubrique fonctionnement*/
 $ico-size: 18px;
