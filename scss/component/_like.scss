@@ -22,13 +22,13 @@
         stroke-miterlimit:4;
         stroke-dasharray:none;
         stroke-opacity:1; 
+        cursor: pointer;
     }
 
     //Remplissage des coeurs au clic (mobile) ou au survol (desktop).
     &:hover{
         path{
             animation: filling 650ms ease-in-out forwards; 
-            cursor: pointer;
         }
     }
 }

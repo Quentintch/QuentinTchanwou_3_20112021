@@ -702,12 +702,12 @@ a {
   stroke-miterlimit: 4;
   stroke-dasharray: none;
   stroke-opacity: 1;
+  cursor: pointer;
 }
 
 .description__like:hover path {
   -webkit-animation: filling 650ms ease-in-out forwards;
           animation: filling 650ms ease-in-out forwards;
-  cursor: pointer;
 }
 
 /*Layout*/
