@@ -1,10 +1,10 @@
 .btn{
     //Apparence du bouton non survolé
+    background: linear-gradient(178deg,$bkg-secondary,$bkg-primary);
     display: inline-block;
     position: relative;
     color: $light;
     padding: 12px 18px;
-    background: linear-gradient(178deg,$bkg-secondary,$bkg-primary);
     z-index: 1;
     
     @include box-radius-shadow(20px, 4px);
@@ -23,7 +23,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background: linear-gradient($bkg-secondary-light, $bkg-primary-light);
+        background: linear-gradient(178deg,$bkg-secondary-light, $bkg-primary-light);
         opacity: 0;
         padding: 12px 18px;
         @include box-radius-shadow(20px, 5px, $color: #c9c9c9);
