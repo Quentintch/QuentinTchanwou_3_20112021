@@ -961,6 +961,9 @@ footer .footer-nav__one--lighter li:last-child {
     display: -ms-flexbox;
     display: flex;
   }
+  footer .footer-nav i {
+    margin-right: 7px;
+  }
   footer .footer-nav__one {
     width: 50%;
   }

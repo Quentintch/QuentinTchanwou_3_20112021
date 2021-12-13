@@ -53,6 +53,10 @@ footer{
         @include large-tel-version{
             display: flex;
 
+            i{
+                margin-right: 7px;
+            }
+
             &__one{
                 width: 50%;
 
