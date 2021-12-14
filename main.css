@@ -514,6 +514,8 @@ a {
   background-color: #f6f6f6ff;
   height: 62px;
   width: 98%;
+  z-index: 1;
+  position: relative;
   border-radius: 17px;
   -webkit-box-shadow: 0px 2px 7px #d8d8d8;
           box-shadow: 0px 2px 7px #d8d8d8;
@@ -548,21 +550,63 @@ a {
   right: 4px;
 }
 
+.functionning__step i::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #9356DC;
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.functionning__step:nth-child(1) i {
+  font-size: 16.5px;
+}
+
+.functionning__step:nth-child(1) i::after {
+  content: "\f3cd";
+}
+
+.functionning__step:nth-child(2) i::after {
+  content: "\f0ca";
+}
+
+.functionning__step:nth-child(3) i::after {
+  content: "\f54e";
+}
+
 .functionning__step p {
   font-weight: bold;
   font-size: 12.5px;
 }
 
-.functionning__step--strong {
+.functionning__step:hover::after {
+  opacity: 1;
+}
+
+.functionning__step:hover i::after {
+  opacity: 1;
+}
+
+.functionning__step::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
   background-color: #f4eefc;
-}
-
-.functionning__step--strong i {
   color: #9356DC;
-}
-
-.functionning__step:nth-child(1) i {
-  font-size: 16.5px;
+  border-radius: 17px;
+  -webkit-box-shadow: 0px 3px 7px #d4d4d4;
+          box-shadow: 0px 3px 7px #d4d4d4;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 @media screen and (min-width: 500px) {
@@ -590,6 +634,9 @@ a {
   .functionning__step i {
     right: 0px;
     margin-bottom: 10px;
+  }
+  .functionning__step::after {
+    border-radius: 10px;
   }
 }
 

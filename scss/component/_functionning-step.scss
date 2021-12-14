@@ -1,9 +1,12 @@
 .functionning__step{
+    //Apparence du bouton non survolé
     display: flex;
     align-items: center;
     background-color: $bkg-light;
     height: 62px;
     width: 98%;
+    z-index: 1;
+    position: relative;
     @include box-radius-shadow(17px, 2px, 7px, #d8d8d8);
 
     //Numéro
@@ -29,24 +32,67 @@
         width: 16%;
         position: relative;
         right: 4px;
+
+        //Icône du bouton au survol
+        &::after{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            color: $bkg-primary;
+            opacity: 0;
+            transition: opacity 200ms ease-in-out;
+        }
+    }
+
+    //Icône de chacun des boutons au survol
+    &:nth-child(1) i{
+        //Taille de la première icône
+        font-size: 16.5px;
+
+        &::after{
+            content: "\f3cd";
+        }
+    }
+
+    &:nth-child(2) i::after{
+        content: "\f0ca";
+    }
+
+    &:nth-child(3) i::after{
+        content: "\f54e";
     }
 
     //Text descriptif
     p{
         @include little-bold;
     }
-    
-    //Transformation au survol sur ordinateur ou au clic sur mobile
-    &--strong{
-        background-color: lighten($bkg-primary, 36%);
-        & i{    
-            color: $bkg-primary;
+
+    &:hover{
+        &::after{
+            opacity: 1;
+        }
+
+        i::after{
+            opacity: 1;
         }
     }
-
-    //Taille de la première icône
-    &:nth-child(1) i{
-        font-size: 16.5px;
+    
+    //Apparence du bouton au survol
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        z-index: -1;
+        background-color: lighten($bkg-primary, 36%);
+        color: $bkg-primary;
+        @include box-radius-shadow(17px, 3px, 7px, #d4d4d4);
+        transition: opacity 200ms ease-in-out;
     }
 
     @include little-tablet-version{
@@ -70,6 +116,10 @@
         i{
             right: 0px;
             margin-bottom: 10px;
+        }
+
+        &::after{
+            border-radius: 10px;
         }
     }
 }
