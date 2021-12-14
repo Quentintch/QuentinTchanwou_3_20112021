@@ -90,7 +90,6 @@
         opacity: 0;
         z-index: -1;
         background-color: lighten($bkg-primary, 36%);
-        color: $bkg-primary;
         @include box-radius-shadow(17px, 3px, 7px, #d4d4d4);
         transition: opacity 200ms ease-in-out;
     }
